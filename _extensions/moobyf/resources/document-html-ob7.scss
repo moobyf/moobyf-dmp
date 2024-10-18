@@ -1,0 +1,63 @@
+/*-- scss:defaults --*/
+
+// Custom colours and variables
+$farquhar-primary: rgb(3, 41, 95);
+$farquhar-secondary: rgb(36, 114, 181);
+$farquhar-important: rgb(226, 6, 19);
+$farquhar-bg: rgb(0, 71, 107);
+$farquhar-body: rgb(19, 21, 22);
+//$accent: #107895;
+$right-arrow: "\2192"; // Unicode character for right arrow
+
+// fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,200i,300,300i,350,350i,400,400i);
+$font-family-sans-serif: "Raleway", sans-serif !default;
+$presentation-font-size-root: 36px;
+
+$presentation-heading-font: "Raleway", sans-serif !default;
+$presentation-heading-color: $farquhar-body !default;
+$presentation-heading-font-weight: 200;
+//$presentation-heading-line-height: 2;
+//$presentation-block-margin: 28px;
+
+// colors
+$link-color: $farquhar-secondary !default;
+$selection-bg: $farquhar-secondary !default;
+
+
+/*-- scss:rules --*/
+
+body {
+    font-family: "Raleway";
+    text-align: justify;
+}
+
+.title {
+    color: $farquhar-primary;
+    font-family: "Raleway";
+    font-weight: bold;
+}
+.subtitle {
+    color:  $farquhar-secondary;
+    font-family: "Raleway";
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-align: left;
+    color: $farquhar-secondary;
+    font-family: "Raleway";
+    font-weight: bold;
+}
+
+.sidebar.margin-sidebar{
+    background-image:url(_extensions/ob7/resources/assets/logos.png);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    background-origin: content-box;
+  }

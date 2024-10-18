@@ -1,0 +1,61 @@
+title: MOOBYF
+author: Julien LEBRANCHU
+version: 0.5.0
+quarto-required: ">=1.3.0"
+contributes:
+  formats:
+    revealjs:
+      theme: [default, resources/revealjs-ob7.scss]
+      menu:
+        side: left
+      date-format: long
+      slide-number: "c/t"
+      auto-stretch: false
+      self-contained: true
+      logo: resources/assets/logos.png
+      title-slide-attributes: 
+        data-background-image: resources/assets/logos.png
+        data-background-size: 25%
+        data-background-position: 2% 2%
+    common:
+      date-format: full
+    docx:
+      reference-doc: "resources/word-template.docx"
+    pptx:
+      reference-doc: resources/powerpoint-template.pptx
+      toc: true
+    html:
+      theme: [cosmo, resources/document-html-ob7.scss]
+      logo: resources/assets/logos.png
+      page-layout: article
+      embed-resources: true
+      smooth-scroll: true
+      toc: true
+      toc-location: left
+      toc-title: Summary
+      toc-depth: 3
+    pdf:
+      documentclass: scrreprt
+      papersize: a4
+      fontsize: 12pt
+      toc: true
+
+      template-partials:
+        - resources/latex/title.tex
+      include-in-header:
+        - "resources/latex/preamble.tex"
+      include-before-body: 
+         - resources/latex/titlepage.tex
+      include-after-body: 
+        - resources/latex/lastPage.tex
+
+
+      biblio-title: "References"
+      biblio-config: false  # Don't use the default template's biblatex commands
+      cite-method: biblatex
+      biblatex-chicago: false  # Custom flag for enabling biblatex-chicago
+      biblio-style: apa
+      biblatexoptions:
+        - backend=biber
+
+

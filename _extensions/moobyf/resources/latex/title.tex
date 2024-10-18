@@ -1,0 +1,85 @@
+$if(biblatex)$
+% %----------------------------------------------------------------------------------------
+% BibLaTeX
+% %----------------------------------------------------------------------------------------
+$if(biblatex-chicago)$
+\usepackage[$if(biblio-style)$$biblio-style$,$endif$$for(biblatexoptions)$$biblatexoptions$$sep$,$endfor$]{biblatex-chicago}
+$else$
+\usepackage[$if(biblio-style)$style=$biblio-style$,$endif$$for(biblatexoptions)$$biblatexoptions$$sep$,$endfor$]{biblatex}
+$endif$
+
+\usepackage{fontawesome5}
+
+\newcommand{\reporttitle}[1]{\renewcommand{\reporttitle}{#1}}
+\newcommand{\reportsubtitle}[1]{\renewcommand{\reportsubtitle}{#1}}
+\newcommand{\reportauthors}[1]{\renewcommand{\reportauthors}{#1}}
+\newcommand{\reportdate}[1]{\renewcommand{\reportdate}{#1}}
+
+
+\setlength\bibitemsep{0pt}  % No space between bib entries
+\renewcommand*{\bibfont}{\footnotesize}  % Use smaller font
+\setlength\bibhang{\parindent}  % Match document indentation
+
+% Fix biblatex's odd preference for using In: by default.
+\renewbibmacro{in:}{%
+  \ifentrytype{article}{}{%
+  \printtext{\bibstring{}\intitlepunct}}}
+
+\addbibresource{$bibliography$}
+$endif$
+
+
+$if(title)$
+\reporttitle{$title$}
+\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
+$endif$
+
+$if(subtitle)$
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\vskip 0.25em \large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{$subtitle$}
+\reportsubtitle{$subtitle$}
+$endif$
+
+\author{
+$for(by-author)$
+{\large $it.name.literal$$if(it.orcid)$~\orcidlink{$it.orcid$}$endif$}%
+$if(it.attributes.corresponding)$\thanks{Corresponding author.}$endif$ \\%
+$for(it.affiliations)$$it.name$ \\$endfor$%
+{\footnotesize \url{$it.email$}} \and
+$endfor$
+}
+
+\reportauthors{
+$for(by-author)$
+{\Large $it.name.literal$$if(it.orcid)${\footnotesize~\orcidlink{$it.orcid$}}$endif$$if(it.email)$\href{mailto:$it.email$}{~\footnotesize\textcolor{farquhar-secondary}{\faIcon{envelope}}}$endif$}\\%
+$for(it.affiliations)${\normalsize $it.name$}\\$endfor$\\[.8ex]%
+$endfor$
+}
+
+$if(date)$
+\date{$date$}
+\reportdate{$date$}
+$else$
+\date{\today}
+\reportdate{\today}
+$endif$
+
+% $if(citation)$
+% Define how to cite the report
+% $endif$
+
+
+
+
+% Typeset URLs in the same font as their parent environment
+%
+% This has to come at the end of the preamble, after any biblatex stuff because 
+% some biblatex styles (like APA) define their own \urlstyle{}
+\usepackage{url}
+\urlstyle{same}
+

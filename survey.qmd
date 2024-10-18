@@ -1,0 +1,88 @@
+---
+title: Data Management Plan
+subtitle: Survey 
+lang: en
+# author:
+#   - name: Julian Bashir
+#     email: jbashir@starfleet.ufp
+#     orcid: 0000-0000-0000-0000
+#     title: Chief Medical Officer
+#     affiliations: 
+#       - id: ds9
+#         name: Starbase Deep Space Nine
+#         department: Sick Bay
+#         address: 1234 Main Street
+#         city: Anytown
+#         region: NY
+#         country: USA
+#         postal-code: 90210
+#     attributes:
+#       corresponding: true
+#   - name: Elim Garak
+#     email: tailor.spy@obsidianorder.card.gov
+#     title: Shopkeeper and Tailor
+#     affiliations:
+#       - id: terok
+#         name: Terok Nor
+#         department: Promenade
+#       - ref: ds9
+# date: August 24, 2022
+bibliography: refs.bib
+format: 
+  moobyf-docx: default
+---
+
+## DATESET list in DMP v1
+
+
+- DATASET-01 Video files from embarked cameras (video)
+- DATASET-02 Deep learning models and training datasets applied on the videos (models, dataset);
+- DATASET-03 Surveys of fishers, local ecological knowledge and associated cultural values (dataset);
+- DATASET-04 Local reference DNA sequence database for genetic analyses(dataset);
+- DATASET-05List of species found through meta-barcoding (stomach contents) (dataset);
+- DATASET-06 List of species found through meta-barcoding (eDNA) (dataset);
+- DATASET-07 NetCDF files of bioacoustic data (dataset);
+- DATASET-08 Deep learning models and training datasetsapplied on the bioacoustic data(models, dataset);
+- DATASET-09 NetCDF files of echosounder buoys data (dataset);
+- DATASET-10 NetCDF files of WBAT echosounder data (dataset);
+
+## Dataset listing
+
+Could you list for each dataset and WP the following informations ?
+
+-   Type of data collected and protocols associated
+-   Where the protocols are stored
+-   Where the data are stored (IRD Drive, MARBEC-DATA...) ?
+-   Which archive we can use for the publication ?
+    -   for example, DL models on github and the output data on the [MOOBYF community host on zenodo](https://zenodo.org/communities/moobyf-biodiversa/)
+-   Do you know a metadata standard to describe the data collected ?
+
+## Expected data sizes
+
+The amount of data generated depends in large part on which sequencing technologies are available at the time of sample submission.
+
+MOOBYF is prepared for the secure storage of 1 Tb of data, which can be extended.
+
+| Description                       | WP  | Expected data sizes (Tb) |
+|-----------------------------------|-----|--------------------------|
+| DNA sequence                      |     |                          |
+| Video files from embarked cameras |     |                          |
+| Deep Learning models              |     |                          |
+| echosounder datasets              |     |                          |
+| bioacoustic dataset               |     |                          |
+| local knowledge                   |     |                          |
+| Photos                            |     |                          |
+
+## Expected datasets & outputs of long-term value
+
+| Description                       | WP            | Public availability       |
+|------------------------------|-----------------|------------------------|
+| Scientific papers                 | 1,2,3,4,5,6,7 | Published open access[^1] |
+| Scripts and workflows             |               | Zenodo, Github            |
+| DNA sequence                      |               |                           |
+| Video files from embarked cameras |               |                           |
+| Deep Learning models              |               |                           |
+| echosounder datasets              |               |                           |
+| bioacoustic dataset               |               |                           |
+| local knowledge                   |               |                           |
+| sampling protocols                |               |                           |
