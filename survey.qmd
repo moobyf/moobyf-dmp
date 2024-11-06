@@ -34,55 +34,87 @@ format:
 
 ## DATESET list in DMP v1
 
-
-- DATASET-01 Video files from embarked cameras (video)
-- DATASET-02 Deep learning models and training datasets applied on the videos (models, dataset);
-- DATASET-03 Surveys of fishers, local ecological knowledge and associated cultural values (dataset);
-- DATASET-04 Local reference DNA sequence database for genetic analyses(dataset);
-- DATASET-05List of species found through meta-barcoding (stomach contents) (dataset);
-- DATASET-06 List of species found through meta-barcoding (eDNA) (dataset);
-- DATASET-07 NetCDF files of bioacoustic data (dataset);
-- DATASET-08 Deep learning models and training datasetsapplied on the bioacoustic data(models, dataset);
-- DATASET-09 NetCDF files of echosounder buoys data (dataset);
-- DATASET-10 NetCDF files of WBAT echosounder data (dataset);
+-   DATASET-01 Video files from embarked cameras (video)
+-   DATASET-02 Deep learning models and training datasets applied on the videos (models, dataset);
+-   DATASET-03 Surveys of fishers, local ecological knowledge and associated cultural values (dataset);
+-   DATASET-04 Local reference DNA sequence database for genetic analyses(dataset);
+-   DATASET-05List of species found through meta-barcoding (stomach contents) (dataset);
+-   DATASET-06 List of species found through meta-barcoding (eDNA) (dataset);
+-   DATASET-07 NetCDF files of bioacoustic data (dataset);
+-   DATASET-08 Deep learning models and training datasetsapplied on the bioacoustic data(models, dataset);
+-   DATASET-09 NetCDF files of echosounder buoys data (dataset);
+-   DATASET-10 NetCDF files of WBAT echosounder data (dataset);
 
 ## Dataset listing
 
-Could you list for each dataset and WP the following informations ?
+Could you list for each WP the following informations ?
 
--   Type of data collected and protocols associated
--   Where the protocols are stored
--   Where the data are stored (IRD Drive, MARBEC-DATA...) ?
--   Which archive we can use for the publication ?
-    -   for example, DL models on github and the output data on the [MOOBYF community host on zenodo](https://zenodo.org/communities/moobyf-biodiversa/)
--   Do you know a metadata standard to describe the data collected ?
+-   The list of dataset you will have
+-   Where the data are stored during the research process (IRD Drive, MARBEC-DATA, laptop ...) ?
 
-## Expected data sizes
+Fo each datasets :
 
-The amount of data generated depends in large part on which sequencing technologies are available at the time of sample submission.
+a.  How will new data be collected or produced and/or how will existing data be re-used?
+b.  What data (for example the kind, formats, and volumes) will be collected or produced?
 
-MOOBYF is prepared for the secure storage of 1 Tb of data, which can be extended.
+-   Explain which methodologies or software will be used if new data are collected or produced. Explain how data provenance will be documented.
+-   Give details on the kind of data: for example, numeric (databases, spreadsheets), textual documents or image. Give details on the data format: the way in which the data is encoded for storage, often reflected by the filename extension. Give preference to open and standard formats.
+-   Give details on the volumes.
+-   Do you know which metadata standard that we need to describe the data collected ?
 
-| Description                       | WP  | Expected data sizes (Tb) |
-|-----------------------------------|-----|--------------------------|
-| DNA sequence                      |     |                          |
-| Video files from embarked cameras |     |                          |
-| Deep Learning models              |     |                          |
-| echosounder datasets              |     |                          |
-| bioacoustic dataset               |     |                          |
-| local knowledge                   |     |                          |
-| Photos                            |     |                          |
+# Data identifiers
 
-## Expected datasets & outputs of long-term value
+## Unique Site Identifiers
 
-| Description                       | WP            | Public availability       |
-|------------------------------|-----------------|------------------------|
-| Scientific papers                 | 1,2,3,4,5,6,7 | Published open access[^1] |
-| Scripts and workflows             |               | Zenodo, Github            |
-| DNA sequence                      |               |                           |
-| Video files from embarked cameras |               |                           |
-| Deep Learning models              |               |                           |
-| echosounder datasets              |               |                           |
-| bioacoustic dataset               |               |                           |
-| local knowledge                   |               |                           |
-| sampling protocols                |               |                           |
+We need to define an ID for site in purpose to keep on track our data and the sample. I propose somthing based on MT + CC + ST. What else is interesting to add ?
+
+| USID | Description    |
+|------|----------------|
+| MT   | Methodoology   |
+| CC   | Country Code   |
+| TS   | Targeted Site  |
+
+: Components of the Unique Site ID
+
+| Methodology  | Code |
+|--------------|------|
+| bioacoustics | BA   |
+|              |      |
+
+: Country Codes for samples
+
+| Country   | ISO 3166-1 Alpha-3 |
+|-----------|--------------------|
+| Indonesia | IDN                |
+| Mayotte   | MYT                |
+| Maldives  | MDV                |
+|           |                    |
+
+: Country Codes for samples
+
+
+
+| Targeted site  | Site code |
+|----------------|-----------|
+| Gondol         |           |
+| Captive fish   |           |
+| FAD1 in Pancer | F1P       |
+
+
+: Site used as case studies
+
+## Sampling naming conventions
+
+A proposition is to adopt a name of the folders based on the USID defined above, for example:
+
+BA_IDN_F1P_Q1_S1 where S1 is the sample number (it can be for example a depth where we put an idrophone, or a camera number) Then, we would have a metadata table (one per methodology, for example, one table for BA=bioacoustics), with the following info (one column per item):
+
+-   Folder_name
+-   File name
+-   Latitude
+-   Longitude
+-   Date
+-   Depth (if relevant)
+    -   all metadata relevant for the given methodology
+
+If you are agree with that, could you fill the table above with your needs ?

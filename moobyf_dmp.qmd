@@ -2,10 +2,31 @@
 title: Data Management Plan
 subtitle: DRAFT of version 2.0  
 lang: en
-# author:
-#   - name: Julian Bashir
-#     email: jbashir@starfleet.ufp
-#     orcid: 0000-0000-0000-0000
+author:
+  - name: Julien Lebranchu
+    # email: julien.lebranchu@ird.fr
+    orcid: 0000-0000-0000-0000
+  - name: Marc Soria 
+    # email: julien.lebranchu@ird.fr
+    orcid: 0000-0000-0000-0000
+  - name: Sebastian Ferse
+    # email: julien.lebranchu@ird.fr
+    orcid: 0000-0000-0000-0000
+  - name: Eric Parmentier
+    # email: julien.lebranchu@ird.fr
+    orcid: 0000-0000-0000-0000
+  - name: Marine Banse 
+    # email: julien.lebranchu@ird.fr
+    orcid: 0000-0000-0000-0000
+  - name: Ma Souza 
+    # email: julien.lebranchu@ird.fr
+    orcid: 0000-0000-0000-0000
+  - name: Annette Breckwoldt
+    # email: annette.breckwoldt@leibniz-zmt.de
+    orcid: 0000-0000-0000-0000
+  - name: Manuela Capello
+    # email: julien.lebranchu@ird.fr
+    orcid: 0000-0000-0000-0000
 #     title: Chief Medical Officer
 #     affiliations: 
 #       - id: ds9
@@ -64,7 +85,7 @@ Work package
 
 [Delivery date]{.smallcaps}
 
-:   01 November 2024
+:   07 November 2024
 
 [Availability]{.smallcaps}
 
@@ -77,7 +98,7 @@ Work package
 +===============+==================+==================+=====================+
 | 1.0           | 31 march 2023    | Original version | Julien Lebranchu    |
 +---------------+------------------+------------------+---------------------+
-| 2.0           | 01 november 2024 |                  | DMB                 |
+| 2.0           | 07 november 2024 |                  | DMB                 |
 |               |                  |                  |                     |
 |               |                  |                  | Led by J. Lebranchu |
 +---------------+------------------+------------------+---------------------+
@@ -91,7 +112,7 @@ Work package
 +---------------+------------------+----------------------+---------------+
 | France        | IRD              | Julien Lebranchu\*   | April 2024    |
 +---------------+------------------+----------------------+---------------+
-| Indenosia     | BRIN             | *Wudianto Wudianto*  | April 2024    |
+| Indenosia     | BRIN             | Wudianto Wudianto    | April 2024    |
 +---------------+------------------+----------------------+---------------+
 | Maldives      | MMRI             | Ahmed Riyaz Jauharee | April 2024    |
 +---------------+------------------+----------------------+---------------+
@@ -136,6 +157,10 @@ WP
 
 :   Work Package. Numbers as per funded proposal
 
+DMB
+
+:   Data Management Board
+
 # DMB
 
 ## Membership, responsibilities, and scope
@@ -145,7 +170,7 @@ DMB will develop, implement, and update an operational MOOBYF Data Management Pl
 -   The DMB is composed of (minimum) one representative from each Partner institution. See @sec-dmb-listing for membership record.
 -   DMB meets 2 times per year (virtually), with interim virtual meetings and digital communications as needed.
 
-# Data and Digital outputs
+# Data collection and Digital outputs
 
 ## Purpose of data collection
 
@@ -154,41 +179,71 @@ Data collection and research are in accordance with the objective of the project
 More information are available online :
 
 -   Biodiversa+ : <https://www.biodiversa.eu/2024/04/15/moobyf/>
-
 -   MOOBYF Communuties on Zenodo : <https://zenodo.org/communities/moobyf-biodiversa/>
 
-    ::: callout-note
-    MOOBYF Website ?
-    :::
-
-## Data types collected
+## Data collection
 
 ### Primary data
 
-#### Video
+Primary data are the raw data collected during the project before any processing or analysis.
 
-#### DNA
+#### Bioacoustic data
+
+Data will be collected using SNAP recorders, deployed with a pre-programmed recorder to capture 10-minute sequences every hour over the course of a week.
+The data type is a WAV format.
+
+#### Temperature-Depth Recorder data
+
+TDR Data collected using STARODDI archival tags. A dedicated protocol for tag deployment and data retrieval is in preparation.
+Data is downloaded using the Seastar (Staroddi) Software, Version 9.45.
+A dedicated R script is used to read and plot the TD data.
+The data are stored in DAT file as numeric.
+
+#### Echosounder data
+
+Echosounder data are collected throug two type of buoys : 
+1. Marine Instruments M3i+ buoys.
+  - A dedicated protocol for buoy deployment and data download is in preparation. The downloading needs to use the MSB Software (Marine Instruments), Version 5.0.
+  
+  - The data are stored in CSV file as numeric. They will read and process through a dedicated R script to dertmine the presence/absence of tuna.
+
+2. Simrad WBAT echosounder.
+  - A dedicated protocol for buoy deployment and data download is in preparation. The downloading needs to use the Matecho and Movies3D Softwares (under Matlab environment), version Matecho20240821V7 and Movies3D2.2.16
+  
+  - The data are stored in EK80 CW or EK80 FM files format. This raw data coming from WBAT Echosounder acquisition must be convert in HAC format (DYYYYMMDD-THHMMSS-X.hac), the ICES HAC Standard Data Exchange Format and then into Matlab HDF5 format with Matecho Software. 
+
+#### Surveys data
+
+The data will be collected through qualitative methods, including focus group discussions, key informant interviews, and observations. The data will on different types like textual documents (such as Interviews, observations) images, audio and video recordings. [ATLAS.ti](https://atlasti.com/fr) software will be used for coding and analyzing the collected data.
+
+#### Video data
+
+The data are collected with 4 IP cameras situated approximately 1.3 m below the surface. 
+The buoy will be programmed to film at different durations/frequencies to assess the best sampling protocol to detect species nearby the AFAD. 
+
+#### Deep learning model data
+
+An annotated dataset of video images will be constructed using an annotation software to label the species of interest in each frame. From this dataset, a deep learning model will be developed and trained using state-of-the-art architectures such as convolutional neural networks (CNNs). 
+
+#### DNA data
+
+During the project, the content stomach and eDNA samples will be collected and analysed through metabarcoding methods. The dataset resulting will be a list of species.
+
+### Secondary data
+
+The responsibility for managing secondary and working datasets, as well as storage, lies with the partners, with guidance provided by the DMB. These datasets are usually generated through analysis pipelines and can be reproduced by applying specific analyses, pipelines, or scripts. The final outputs of these processes are essential for reports, publications, and other deliverables.
+
+### Other data
 
 #### Photos
 
 ::: callout-note
-Are you agree
+I think its mandatory to be compliant with GDPR
 :::
 
-Photos collected within the project will be matched with the name of the photographer
-through the file naming convention, ensuring correct attribution for the photographer.
-By submitting photos to the project directories, it is understood by partners
- that their name WILL be public as the photo credit if/when their photos are
-used for presentations, publications, and communications to support
-correct and transparent attribution of credit.
+Photos collected within the project will include the photographer's name in the file naming convention to ensure proper attribution. By submitting photos to the project directories, partners acknowledge that their name *will* be publicly credited if/when the photos are used in presentations, publications, or communications, supporting transparent credit attribution.
 
-In the case of photos that include people, they can only be submitted to the project if
-expressed permission from those pictured is provided. The initials of the person/people
-must be reported through the naming convention and their full name included in the file
-MOOBYF_photos_README. The photographer is responsible for ensuring that every
-pictured person understands that their photo and name (optional) WILL be public if/
-when the photos are used for  presentations, publications, and
-communications.
+For photos featuring people, they can only be submitted if explicit permission is obtained from those depicted. The initials of the individuals must be included in the file name, and their full names should be documented in the file MOOBYF_photos_README. The photographer is responsible for ensuring that everyone featured in a photo understands that their image and, optionally, their name *will* be publicly visible if/when the photo is used for presentations, publications, or communications.
 
 ## Expected data sizes
 
@@ -196,181 +251,162 @@ The amount of data generated depends in large part on which sequencing technolog
 
 MOOBYF is prepared for the secure storage of 1 Tb of data, which can be extended.
 
-+-----------------------------------+---------------+--------------------------+
-| Description                       | WP            | Expected data sizes (Tb) |
-+===================================+===============+==========================+
-| DNA sequence                      |               |                          |
-+-----------------------------------+---------------+--------------------------+
-| Video files from embarked cameras |               |                          |
-+-----------------------------------+---------------+--------------------------+
-| Deep Learning models              |               |                          |
-+-----------------------------------+---------------+--------------------------+
-| echosounder datasets              |               |                          |
-+-----------------------------------+---------------+--------------------------+
-| bioacoustic dataset               |               |                          |
-+-----------------------------------+---------------+--------------------------+
-| local knowledge                   |               |                          |
-+-----------------------------------+---------------+--------------------------+
-| Photos                            |               |                          |
-+-----------------------------------+---------------+--------------------------+
++-----------------------------------+--------------------------+
+| Description                       | Expected data sizes (Gb) |
++===================================+==========================+
+| DNA sequence                      | To be estimate           |
++-----------------------------------+--------------------------+
+| Video files from embarked cameras | 400                      |
++-----------------------------------+--------------------------+
+| Deep Learning models              | 200                      |
++-----------------------------------+--------------------------+
+| TDR datasets                      | 10                       |
++-----------------------------------+--------------------------+
+| echosounder datasets              | 200                      |
++-----------------------------------+--------------------------+
+| bioacoustic dataset               | 150                      |
++-----------------------------------+--------------------------+
+| local knowledge                   | 1                        |
++-----------------------------------+--------------------------+
 
 ## Expected datasets & outputs of long-term value
 
-+-----------------------------------+---------------+---------------------------+
-| Description                       | WP            | Public availability       |
-+===================================+===============+===========================+
-| Scientific papers                 | 1,2,3,4,5,6,7 | Published open access[^2] |
-+-----------------------------------+---------------+---------------------------+
-| Scripts and workflows             |               | Zenodo, Github            |
-+-----------------------------------+---------------+---------------------------+
-| DNA sequence                      |               |                           |
-+-----------------------------------+---------------+---------------------------+
-| Video files from embarked cameras |               |                           |
-+-----------------------------------+---------------+---------------------------+
-| Deep Learning models              |               |                           |
-+-----------------------------------+---------------+---------------------------+
-| echosounder datasets              |               |                           |
-+-----------------------------------+---------------+---------------------------+
-| bioacoustic dataset               |               |                           |
-+-----------------------------------+---------------+---------------------------+
-| local knowledge                   |               |                           |
-+-----------------------------------+---------------+---------------------------+
-| sampling protocols                |               |                           |
-+-----------------------------------+---------------+---------------------------+
++-----------------------------------+---------------------+---------------------------+
+| Description                       | WP                  | Public availability       |
++===================================+=====================+===========================+
+| Scientific papers                 | 1, 2, 3, 4, 5, 6, 7 | Published open access[^2] |
++-----------------------------------+---------------------+---------------------------+
+| Scripts and workflows             | 2, 3, 4, 5, 6       | Zenodo, Github            |
++-----------------------------------+---------------------+---------------------------+
+| DNA sequence                      | 4                   | To be define              |
++-----------------------------------+---------------------+---------------------------+
+| Video files from embarked cameras | 5                   | Zenodo                    |
++-----------------------------------+---------------------+---------------------------+
+| Deep Learning models              | 3, 5                | Github, Zenodo            |
++-----------------------------------+---------------------+---------------------------+
+| echosounder datasets              | 3                   | Zenodo                    |
++-----------------------------------+---------------------+---------------------------+
+| bioacoustic dataset               | 2                   | Zenodo                    |
++-----------------------------------+---------------------+---------------------------+
+| local knowledge                   | 1, 6                | Zenodo                    |
++-----------------------------------+---------------------+---------------------------+
+| sampling protocols                | 2, 3, 4, 5, 6       | Zenodo                    |
++-----------------------------------+---------------------+---------------------------+
+| Personal information              | 1, 6                | Not public, not shared    |
++-----------------------------------+---------------------+---------------------------+
 
 [^2]: Need to specify an archive ? like [HAL](https://ird.hal.science)
 
-# Data collection
-
-## Primary data
-
-::: callout-note
-Define primary data before write this section
-:::
-
-## Secondary data
-
-Secondary and working datasets and storage fall under the responsibility of
-the partners with guidance from the DMB. These datasets are typically derived from analysis
-pipelines and can be recreated by applying analysis/analyses, pipelines, or scripts. End
-products of these processes that are relied upon for reports/publications/etc...
-
-# Data identifiers
+# Data identifiers {#sec-data-identifier}
 
 ## Unique Site Identifiers
 
-We need to define an ID for site in purpose to keep on track our data and the sample. 
-I propose somthing based on CC + TS + ST. What else is interesting to add ?
+We need to define an ID for site in purpose to keep on track our data and the sample. I propose somthing based on MT + CC + TS.
 
 | USID | Description    |
 |------|----------------|
+| MT   | Methodology    |
 | CC   | Country Code   |
 | TS   | Targeted Site  |
-| ST   | Sample type    |
 
 : Components of the Unique Site ID
 
-+--------------+---------------------+
-| Country      | ISO 3166-1 Alpha-3  |
-+==============+=====================+
-| Indonesia    | IDN                 |
-+--------------+---------------------+
-| Mayotte      | MYT                 |
-+--------------+---------------------+
-| Maldives     | MDV                 |
-+--------------+---------------------+
-|              |                     |
-+--------------+---------------------+
+| Methodology     | Code |
+|-----------------|------|
+| bioacoustics    | BA   |
+| echosunder buoy | MI   |
+| wbat            | WB   |
 
 : Country Codes for samples
 
-| Targeted site | Site code |
-|---------------|-----------|
-| Gondol        |           |
-|               |           |
-|               |           |
-|               |           |
+| Country   | ISO 3166-1 Alpha-3 |
+|-----------|--------------------|
+| Indonesia | IDN                |
+| Mayotte   | MYT                |
+| Maldives  | MDV                |
+
+: Country Codes for samples
+
+| Targeted site  | Site code |
+|----------------|-----------|
+| Gondol         | GO        |
+| Captive fish   | CF        |
+| FAD1 in Pancer | F1P       |
 
 : Site used as case studies
 
-
 ## Sampling naming conventions
 
-We need to define a naming convention to be sure don't messup the file.
-I propose something like that: (is it sufficient ?)
+A proposition is to adopt a name of the folders based on the USID defined above, for example:
 
-[USID]_[YYYYMMDD]_[###]_[status]_[version_number].ext
+BA_IDN_F1P_Q1_S1 where S1 is the sample number (it can be for example a depth where we put an hydrophone, or a camera number) Then, we would have a metadata table (one per methodology, for example, one table for BA=bioacoustics), with the following info (one column per item):
 
-where: 
-
-- the version date (use ISO 8601 format: YYYYMMDD)
-- Experiment number or sample ID is '###'
-- status is raw, processed, draft, final
-- use a version number (e.g. “v01” or “v02”)
+-   Folder_name
+-   File name
+-   Latitude
+-   Longitude
+-   Date start
+-   Date end
+-   Distance from buoy to FAD
 
 # Data security, Storage & Costs
 
 ## During the project
 
-::: callout-note
-Need to write the section
-:::
+-   Non-personal data backup : All MOOBYF data will be stored on a secure data storage (MARBEC_NAS) to prevent data loss and data security.
+-   Personal data: Stakeholder personal data should be collected and stored using the backup system of his insititute.
+-   IRD Drive : MOOBYF has a shared directory on IRD Drive with a proficient backup system. Use of this product is controlled direclty by the IT staff at IRD and they managed the access with at a user level.
 
 ## Long-term
 
-Deposit of data in recognized public data repositories is a priority. Data and other digital outputs will be made available  following FAIR standards.
+Deposit of data in recognized public data repositories is a priority. Data and other digital outputs will be made available following FAIR standards.
 
 ## Costs
 
--   Costs for the safe storage of primary data are assumed by the coordinator at IRD, other costs are assumed by the Partners.
+-   Costs for the safe storage of primary data are assumed by the coordinator at IRD, other costs are assumed by the Partners. Costs are covered by IRD until all data has been submitted to online repositories.
 -   Partners assume responsibility for their local costs of data backup, security and storage of primary data copies, secondary data and scripts.
-
-::: callout-note
-Costs after the end of the project ?
-:::
 
 ## Data Organization
 
-### Primary data 
+### Primary data
 
-::: callout-note
-Need to write the section
-:::
+Directory structure and naming conventions will be established and
+updated by the DMB prioritizing FAIR principles. 
+Directory and file names are expected to use the PrID when applicable (see @sec-data-identifier). 
 
-### Secondary data 
+### Secondary data
 
-These data are generated at Partner institutions and must adhere to
-Institutional requirements for Directory structure and naming conventions where
-applicable. To share these data among Partners (directly, via Zenodo Community or
-other) or with other approved recipients, the conventions for primary data must be
-applied.
+These data are generated at Partner institutions and must adhere to Institutional requirements for Directory structure and naming conventions where applicable. To share these data among Partners (directly, via Zenodo Community or other) or with other approved recipients, the conventions for primary data must be applied.
 
 # Data use & sharing
 
-::: callout-note
-Need to write the section
-:::
-
 ## General principles
 
-Datasets will be formatted and made accessible at the time of publication or
-before according to the community standards and will follow FAIR principles.
+Datasets will be formatted and made accessible at the time of publication or before according to the community standards and will follow FAIR principles.
 
 ## Within project data & digital output sharing
 
 ### Primary data
 
+All data and metadata will be produced by individual Partner institutions and shared on a common platform or promptly transferred as digital copies to the IRD for backup. Additionally, copies of raw data may be made available as specified in Section 6.1 during the project period.
+
+The project coordinator and the DMB representative at IRD will have access to these datasets and will provide data to Partners upon request, with one exception:
+
+If a data request extends beyond the defined responsibilities of a Partner’s project role (as outlined in the MOOBYF application), the DMB will review the request before granting access. Access will be approved if all the following conditions are met:
+1. The data request aligns with and supports MOOBYF’s goals and objectives.
+2. Accessing the data does not interfere with the rights and responsibilities of other Partners within the project.
+3. Formal, mutually agreed arrangements—such as co-authorship, collaboration, or other fair agreements—are confirmed via email to the DMB.
+
 ### Secondary data
 
-These data are generated at partner institutions and are expected to
-be available among partners following the same principles and criteria
-as for Primary Data (above). 
+Data generated by partner institutions should be made accessible to all partners following the same principles and criteria established for Primary Data (as described above).
 
-Sharing can be achieved by any secure method unless otherwise noted as excluded by the DMB and future versions of the DMP.
+Data sharing can be conducted through any secure method unless specified otherwise by the DMB or in future updates to the DMP.
 
-## Public access to data and digital outputs
+<!-- ## Public access to data and digital outputs -->
 
-###  Scientific papers
+```{=html}
+<!-- ###  Scientific papers
 
 We prioritize publishing open access. Papers will be made publicly available from the time of publication. 
 By mutual agreement among authors, the pre-publication version may be made publicly available via a field-appropriate and recognized pre-print archive.
@@ -383,16 +419,17 @@ pre-print versions).
 
 The lead author and corresponding author of each manuscript is responsible for
 coordinating with the DMB and other work groups and authors to ensure that the data
-access is made public upon publication.
+access is made public upon publication. -->
+```
 
 # Document credits & How to cite
 
 #### How to cite:
 
-**XXXXXXXX** (2024). MOOBYF Data Management Plan v2. Zenodo. [10.5281/zenodo.13883981](https://doi.org/10.5281/zenodo.13883981)
+**Lebranchu, J. and al.** (2024). MOOBYF Data Management Plan v2. Zenodo. [10.5281/zenodo.13883981](https://doi.org/10.5281/zenodo.13883981)
 
 <!-- #### Photo credits: -->
 
 <!-- #### Font: -->
 
-# References
+<!-- # References -->
