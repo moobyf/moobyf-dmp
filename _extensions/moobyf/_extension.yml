@@ -26,7 +26,7 @@ contributes:
       toc: true
     html:
       theme: [cosmo, resources/document-html-ob7.scss]
-      logo: resources/assets/logos.png
+      logo: resources/assets/logo.png
       page-layout: article
       embed-resources: true
       smooth-scroll: true
