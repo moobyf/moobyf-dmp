@@ -1,6 +1,6 @@
 ---
 title: Data Management Plan
-subtitle: DRAFT of version 2.0  
+subtitle: Version 2.0  
 lang: en
 author:
   - name: Julien Lebranchu
@@ -43,7 +43,7 @@ author:
     - National Biodiversity Future Center
   - name: Manuela Capello
     # email: julien.lebranchu@ird.fr
-    # orcid: 0000-0000-0000-0000
+    orcid: 0000-0002-9206-011X
     affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Bali, Indonesia
 # date: August 24, 2022
 bibliography: refs.bib
@@ -51,7 +51,7 @@ pdf-engine: lualatex
 pdf-engine-opts:
   - '--no-shell-escape'
   - '--halt-on-error'
-# latex-auto-install: false
+latex-auto-install: false
 latex-tinytex: false
 format: 
   moobyf-pdf: default
