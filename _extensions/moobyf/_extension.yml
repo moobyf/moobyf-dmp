@@ -39,6 +39,7 @@ contributes:
       papersize: a4
       fontsize: 12pt
       toc: true
+      toc-depth: 2
 
       template-partials:
         - resources/latex/title.tex

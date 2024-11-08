@@ -55,9 +55,9 @@
 % % Gestion des couleurs
 
 \definecolor{moobyf-primary}{RGB}{29,53,87} %$moobyf-primary: rgb(3, 41, 95);
-\definecolor{moobyf-secondary}{RGB}{69, 123, 157} % $moobyf-secondary: rgb(36, 114, 181);
-\definecolor{moobyf-ternary}{RGB}{168, 218, 220} %$moobyf-ternary: rgb(32,54,97);
-\definecolor{moobyf-quartenary}{RGB}{241, 250, 238} %$moobyf-ternary: rgb(32,54,97);
+\definecolor{moobyf-secondary}{RGB}{46, 76, 137} % $moobyf-secondary: rgb(36, 114, 181);
+\definecolor{moobyf-ternary}{RGB}{59, 99, 178} %$moobyf-ternary: rgb(32,54,97);
+\definecolor{moobyf-quartenary}{RGB}{91, 127, 200} %$moobyf-ternary: rgb(32,54,97);
 \definecolor{moobyf-important}{RGB}{230, 57, 70} %$moobyf-important: rgb(226, 6, 19);
 \definecolor{moobyf-bg}{RGB}{0,71,107}
 
@@ -118,7 +118,7 @@ urlcolor=moobyf-primary
 % %----------------------------------------------------------------------------------------
 
 \usepackage{titlesec} % Required for modifying sections
-
+% \setcounter{secnumdepth}{$secnumdepth}
 % \iftoggle{unnumberedsections}{ % Conditional logic for the unnumbered sections class options
 % 	\setcounter{secnumdepth}{0} % Don't number sections at any level
 % }{
@@ -128,10 +128,10 @@ urlcolor=moobyf-primary
 
 \titleformat
 	{\chapter} % Section type being modified
-	[hang] % Section layout type, can be: hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame
+	[block] % Section layout type, can be: hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame
 	{\raggedright\LARGE\bfseries\color{moobyf-primary}} % Text formatting of the whole section, i.e. label and title
 	{\thechapter} % Section label (e.g. number) and its formatting
-	{0pt} % Horizontal space between the section label and title
+	{10pt} % Horizontal space between the section label and title
 	{} % Code before the section title
 	[] % Code after the section title
 
@@ -167,9 +167,9 @@ urlcolor=moobyf-primary
 \titleformat
 	{\subsubsection} % Section type being modified
 	[block] % Section layout type, can be: hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame
-	{\raggedright\itshape\normalsize\color{moobyf-ternary}} % Text formatting of the whole section, i.e. label and title
-	{\thesubsubsection} % Section label (e.g. number) and its formatting
-	{5pt} % Horizontal space between the section label and title
+	{\raggedright\itshape\normalsize\color{moobyf-quartenary}} % Text formatting of the whole section, i.e. label and title
+	{} % Section label (e.g. number) and its formatting
+	{0pt} % Horizontal space between the section label and title
 	{} % Code before the section title
 	[] % Code after the section title
 
@@ -228,35 +228,35 @@ urlcolor=moobyf-primary
 
 
 
-% %----------------------------------------------------------------------------------------
-% %	TABLES
-% %----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	TABLES
+%----------------------------------------------------------------------------------------
 
-% \usepackage{booktabs} % Required for better horizontal rules in tables
+\usepackage{booktabs} % Required for better horizontal rules in tables
 
-% \usepackage{array} % Required for manipulating table columns
-% \renewcommand{\arraystretch}{1.25} % Increase the height of table rows
+\usepackage{array} % Required for manipulating table columns
+\renewcommand{\arraystretch}{1.25} % Increase the height of table rows
 
-% \newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}} % Define a new right-aligned paragraph column type
-% \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} % Define a new left-aligned (no justification) paragraph column type
-% \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % Define a new centered paragraph column type
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}} % Define a new right-aligned paragraph column type
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} % Define a new left-aligned (no justification) paragraph column type
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % Define a new centered paragraph column type
 
-% %----------------------------------------------------------------------------------------
-% %	CAPTIONS
-% %----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	CAPTIONS
+%----------------------------------------------------------------------------------------
 
-% \usepackage{caption} % Required for customizing captions
+\usepackage{caption} % Required for customizing captions
 
-% \captionsetup{skip=6pt} % Vertical whitespace between figures/tables and the caption (default is 10pt)
-% \captionsetup{font={bf,small}} % Define caption font style
-% \captionsetup{justification=raggedright, singlelinecheck=false} % Left-align captions
+\captionsetup{skip=8pt} % Vertical whitespace between figures/tables and the caption (default is 10pt)
+\captionsetup{font={bf,small}} % Define caption font style
+\captionsetup{justification=raggedright, singlelinecheck=false} % Left-align captions
 
-% % The sidenotes package defines 4 custom caption styles for wide tables, wide figures, margin tables and margin figures
-% % To style these the same as in-text tables and figures, set these 4 styles to the same styling values
-% \DeclareCaptionStyle{widetable}{font={bf, footnotesize}, justification=raggedright, singlelinecheck=false}
-% \DeclareCaptionStyle{widefigure}{font={bf, footnotesize}, justification=raggedright, singlelinecheck=false}
-% \DeclareCaptionStyle{marginfigure}{font={bf, scriptsize}, justification=raggedright, singlelinecheck=false}
-% \DeclareCaptionStyle{margintable}{font={bf, scriptsize}, justification=raggedright, singlelinecheck=false}
+% The sidenotes package defines 4 custom caption styles for wide tables, wide figures, margin tables and margin figures
+% To style these the same as in-text tables and figures, set these 4 styles to the same styling values
+\DeclareCaptionStyle{widetable}{font={bf, footnotesize}, justification=raggedright, singlelinecheck=false}
+\DeclareCaptionStyle{widefigure}{font={bf, footnotesize}, justification=raggedright, singlelinecheck=false}
+\DeclareCaptionStyle{marginfigure}{font={bf, scriptsize}, justification=raggedright, singlelinecheck=false}
+\DeclareCaptionStyle{margintable}{font={bf, scriptsize}, justification=raggedright, singlelinecheck=false}
 
 % %----------------------------------------------------------------------------------------
 % %	LISTS
