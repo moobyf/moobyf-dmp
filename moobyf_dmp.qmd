@@ -4,51 +4,55 @@ subtitle: DRAFT of version 2.0
 lang: en
 author:
   - name: Julien Lebranchu
-    # email: julien.lebranchu@ird.fr
-    orcid: 0000-0000-0000-0000
+    email: julien.lebranchu@ird.fr
+    orcid: 0000-0002-7759-0534
+    affiliations: 
+      - MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Victoria, Seychelles
+      # - IRD@SFA, Victoria, Seychelles.
+    attributes:
+      corresponding: true
   - name: Marc Soria 
-    # email: julien.lebranchu@ird.fr
-    orcid: 0000-0000-0000-0000
+    # email: marc.soria@ird.fr
+    affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Sète France
+    orcid: 0000-0001-7409-5872
   - name: Sebastian Ferse
-    # email: julien.lebranchu@ird.fr
-    orcid: 0000-0000-0000-0000
+    # email: sebastian.ferse@leibniz-zmt.de
+    # orcid: 0000-0000-0000-0000
+    affiliations: ZMT, Germany
   - name: Eric Parmentier
-    # email: julien.lebranchu@ird.fr
-    orcid: 0000-0000-0000-0000
+    # email: e.parmentier@ulg.ac.be
+    # orcid: 0000-0000-0000-0000
+    affiliations: University of Liege, Belgium
   - name: Marine Banse 
     # email: julien.lebranchu@ird.fr
-    orcid: 0000-0000-0000-0000
+    # orcid: 0000-0000-0000-0000
+    affiliations: University of Liege, Belgium
   - name: Ma Souza 
-    # email: julien.lebranchu@ird.fr
-    orcid: 0000-0000-0000-0000
+    # email: ma.suza@leibniz-zmt.de
+    orcid: 0009-0007-5166-8106
+    affiliations: ZMT, Germany
   - name: Annette Breckwoldt
     # email: annette.breckwoldt@leibniz-zmt.de
-    orcid: 0000-0000-0000-0000
+    # orcid: 0000-0000-0000-0000
+    affiliations: ZMT, Germany
+  - name: Marco Andrello
+    # email: marco.andrello@gmail.com
+    orcid: 0000-0001-7590-2736
+    affiliations: 
+    - CNR-IAS, Rome, Italy
+    - National Biodiversity Future Center
   - name: Manuela Capello
     # email: julien.lebranchu@ird.fr
-    orcid: 0000-0000-0000-0000
-#     title: Chief Medical Officer
-#     affiliations: 
-#       - id: ds9
-#         name: Starbase Deep Space Nine
-#         department: Sick Bay
-#         address: 1234 Main Street
-#         city: Anytown
-#         region: NY
-#         country: USA
-#         postal-code: 90210
-#     attributes:
-#       corresponding: true
-#   - name: Elim Garak
-#     email: tailor.spy@obsidianorder.card.gov
-#     title: Shopkeeper and Tailor
-#     affiliations:
-#       - id: terok
-#         name: Terok Nor
-#         department: Promenade
-#       - ref: ds9
+    # orcid: 0000-0000-0000-0000
+    affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Bali, Indonesia
 # date: August 24, 2022
 bibliography: refs.bib
+pdf-engine: lualatex
+pdf-engine-opts:
+  - '--no-shell-escape'
+  - '--halt-on-error'
+# latex-auto-install: false
+latex-tinytex: false
 format: 
   moobyf-pdf: default
 ---
@@ -201,7 +205,8 @@ The data are stored in DAT file as numeric.
 
 #### Echosounder data
 
-Echosounder data are collected throug two type of buoys : 
+Echosounder data are collected through two types of buoys : 
+
 1. Marine Instruments M3i+ buoys.
   - A dedicated protocol for buoy deployment and data download is in preparation. The downloading needs to use the MSB Software (Marine Instruments), Version 5.0.
   
@@ -210,18 +215,18 @@ Echosounder data are collected throug two type of buoys :
 2. Simrad WBAT echosounder.
   - A dedicated protocol for buoy deployment and data download is in preparation. The downloading needs to use the Matecho and Movies3D Softwares (under Matlab environment), version Matecho20240821V7 and Movies3D2.2.16
   
-  - The data are stored in EK80 CW or EK80 FM files format. This raw data coming from WBAT Echosounder acquisition must be convert in HAC format (DYYYYMMDD-THHMMSS-X.hac), the ICES HAC Standard Data Exchange Format and then into Matlab HDF5 format with Matecho Software. 
+  - The data are stored in EK80 CW or EK80 FM files format. This raw data coming from WBAT Echosounder acquisition must be converted in HAC format (DYYYYMMDD-THHMMSS-X.hac), the ICES HAC Standard Data Exchange Format and then into Matlab HDF5 format with Matecho Software. 
 
 #### Surveys data
 
-The data will be collected through qualitative methods, including focus group discussions, key informant interviews, and observations. The data will on different types like textual documents (such as Interviews, observations) images, audio and video recordings. [ATLAS.ti](https://atlasti.com/fr) software will be used for coding and analyzing the collected data.
+The data will be collected through qualitative methods, including focus group discussions, key informant interviews, and observations. The data will on different types like textual documents (such as interviews, observations), images, audio and video recordings. [ATLAS.ti](https://atlasti.com/fr) software will be used for coding and analysing the collected data.
 
 #### Video data
 
 The data are collected with 4 IP cameras situated approximately 1.3 m below the surface. 
-The buoy will be programmed to film at different durations/frequencies to assess the best sampling protocol to detect species nearby the AFAD. 
+The buoy will be programmed to film at different durations/frequencies to assess the best sampling protocol to detect species near the AFAD. 
 
-#### Deep learning model data
+#### Deep Learning Model data
 
 An annotated dataset of video images will be constructed using an annotation software to label the species of interest in each frame. From this dataset, a deep learning model will be developed and trained using state-of-the-art architectures such as convolutional neural networks (CNNs). 
 
@@ -236,10 +241,6 @@ The responsibility for managing secondary and working datasets, as well as stora
 ### Other data
 
 #### Photos
-
-::: callout-note
-I think its mandatory to be compliant with GDPR
-:::
 
 Photos collected within the project will include the photographer's name in the file naming convention to ensure proper attribution. By submitting photos to the project directories, partners acknowledge that their name *will* be publicly credited if/when the photos are used in presentations, publications, or communications, supporting transparent credit attribution.
 
@@ -264,7 +265,7 @@ MOOBYF is prepared for the secure storage of 1 Tb of data, which can be extended
 +-----------------------------------+--------------------------+
 | echosounder datasets              | 200                      |
 +-----------------------------------+--------------------------+
-| bioacoustic dataset               | 150                      |
+| bioacoustics dataset              | 150                      |
 +-----------------------------------+--------------------------+
 | local knowledge                   | 1                        |
 +-----------------------------------+--------------------------+
@@ -276,9 +277,9 @@ MOOBYF is prepared for the secure storage of 1 Tb of data, which can be extended
 +===================================+=====================+===========================+
 | Scientific papers                 | 1, 2, 3, 4, 5, 6, 7 | Published open access[^2] |
 +-----------------------------------+---------------------+---------------------------+
-| Scripts and workflows             | 2, 3, 4, 5, 6       | Zenodo, Github            |
+| Scripts and workflows             | 2, 3, 4, 5, 6       | Zenodo, GitHub            |
 +-----------------------------------+---------------------+---------------------------+
-| DNA sequence                      | 4                   | To be define              |
+| DNA sequence                      | 4                   | To be defined              |
 +-----------------------------------+---------------------+---------------------------+
 | Video files from embarked cameras | 5                   | Zenodo                    |
 +-----------------------------------+---------------------+---------------------------+
@@ -286,7 +287,7 @@ MOOBYF is prepared for the secure storage of 1 Tb of data, which can be extended
 +-----------------------------------+---------------------+---------------------------+
 | echosounder datasets              | 3                   | Zenodo                    |
 +-----------------------------------+---------------------+---------------------------+
-| bioacoustic dataset               | 2                   | Zenodo                    |
+| bioacoustics dataset              | 2                   | Zenodo                    |
 +-----------------------------------+---------------------+---------------------------+
 | local knowledge                   | 1, 6                | Zenodo                    |
 +-----------------------------------+---------------------+---------------------------+
@@ -295,13 +296,13 @@ MOOBYF is prepared for the secure storage of 1 Tb of data, which can be extended
 | Personal information              | 1, 6                | Not public, not shared    |
 +-----------------------------------+---------------------+---------------------------+
 
-[^2]: Need to specify an archive ? like [HAL](https://ird.hal.science)
+[^2]: Open archive like [HAL](https://ird.hal.science)
 
 # Data identifiers {#sec-data-identifier}
 
 ## Unique Site Identifiers
 
-We need to define an ID for site in purpose to keep on track our data and the sample. I propose somthing based on MT + CC + TS.
+We need to define an ID for sites in purpose to keep on track our data and the sample. I propose something based on MT + CC + TS.
 
 | USID | Description    |
 |------|----------------|
@@ -314,7 +315,7 @@ We need to define an ID for site in purpose to keep on track our data and the sa
 | Methodology     | Code |
 |-----------------|------|
 | bioacoustics    | BA   |
-| echosunder buoy | MI   |
+| echosounder buoy | MI   |
 | wbat            | WB   |
 
 : Country Codes for samples
@@ -339,9 +340,9 @@ We need to define an ID for site in purpose to keep on track our data and the sa
 
 A proposition is to adopt a name of the folders based on the USID defined above, for example:
 
-BA_IDN_F1P_Q1_S1 where S1 is the sample number (it can be for example a depth where we put an hydrophone, or a camera number) Then, we would have a metadata table (one per methodology, for example, one table for BA=bioacoustics), with the following info (one column per item):
+BA_IDN_F1P_Q1_S1 where S1 is the sample number (it can be for example a depth where we put a hydrophone or a camera number) Then, we would have a metadata table (one per methodology, for example, one table for BA=bioacoustics), with the following info (one column per item):
 
--   Folder_name
+-   Folder _name
 -   File name
 -   Latitude
 -   Longitude
@@ -354,29 +355,29 @@ BA_IDN_F1P_Q1_S1 where S1 is the sample number (it can be for example a depth wh
 ## During the project
 
 -   Non-personal data backup : All MOOBYF data will be stored on a secure data storage (MARBEC_NAS) to prevent data loss and data security.
--   Personal data: Stakeholder personal data should be collected and stored using the backup system of his insititute.
--   IRD Drive : MOOBYF has a shared directory on IRD Drive with a proficient backup system. Use of this product is controlled direclty by the IT staff at IRD and they managed the access with at a user level.
+-   Personal data: Stakeholder personal data should be collected and stored using the backup system of his institute.
+-   IRD Drive : MOOBYF has a shared directory on IRD Drive with a proficient backup system. Use of this product is controlled directly by the IT staff at IRD and they managed the access with at a user level.
 
 ## Long-term
 
-Deposit of data in recognized public data repositories is a priority. Data and other digital outputs will be made available following FAIR standards.
+Deposits of data in recognised public data repositories are a priority. Data and other digital outputs will be made available following FAIR standards.
 
 ## Costs
 
 -   Costs for the safe storage of primary data are assumed by the coordinator at IRD, other costs are assumed by the Partners. Costs are covered by IRD until all data has been submitted to online repositories.
 -   Partners assume responsibility for their local costs of data backup, security and storage of primary data copies, secondary data and scripts.
 
-## Data Organization
+## Data Organisation
 
 ### Primary data
 
 Directory structure and naming conventions will be established and
-updated by the DMB prioritizing FAIR principles. 
+updated by the DMB prioritising FAIR principles. 
 Directory and file names are expected to use the PrID when applicable (see @sec-data-identifier). 
 
 ### Secondary data
 
-These data are generated at Partner institutions and must adhere to Institutional requirements for Directory structure and naming conventions where applicable. To share these data among Partners (directly, via Zenodo Community or other) or with other approved recipients, the conventions for primary data must be applied.
+These data are generated at Partner institutions and must adhere to institutional requirements for Directory structure and naming conventions where applicable. To share these data among Partners (directly, via Zenodo Community or other) or with other approved recipients, the conventions for primary data must be applied.
 
 # Data use & sharing
 
@@ -393,6 +394,7 @@ All data and metadata will be produced by individual Partner institutions and sh
 The project coordinator and the DMB representative at IRD will have access to these datasets and will provide data to Partners upon request, with one exception:
 
 If a data request extends beyond the defined responsibilities of a Partner’s project role (as outlined in the MOOBYF application), the DMB will review the request before granting access. Access will be approved if all the following conditions are met:
+
 1. The data request aligns with and supports MOOBYF’s goals and objectives.
 2. Accessing the data does not interfere with the rights and responsibilities of other Partners within the project.
 3. Formal, mutually agreed arrangements—such as co-authorship, collaboration, or other fair agreements—are confirmed via email to the DMB.
@@ -426,9 +428,11 @@ access is made public upon publication. -->
 
 #### How to cite:
 
-**Lebranchu, J. and al.** (2024). MOOBYF Data Management Plan v2. Zenodo. [10.5281/zenodo.13883981](https://doi.org/10.5281/zenodo.13883981)
+Lebranchu, J. and al. (2024). MOOBYF Data Management Plan v2. Zenodo. [10.5281/zenodo.13883981](https://doi.org/10.5281/zenodo.13883981)
 
-<!-- #### Photo credits: -->
+#### Photo credits:
+
+Cover : Bali, Indonesia, 2024.
 
 <!-- #### Font: -->
 
