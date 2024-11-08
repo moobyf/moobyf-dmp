@@ -1,6 +1,8 @@
 \usepackage{pdfpages}
 \usepackage{fullwidth}
 \usepackage{wallpaper}
+\usepackage{hyperref}
+
 \usepackage[
 	type={CC},
 	modifier={by},
@@ -11,7 +13,7 @@
 \usepackage[auth-lg]{authblk}
 
 \usepackage{graphicx} % Required for including images
-\graphicspath{{_extensions/ob7/resources/assets/}{./}{images/}} % Specifies where to look for included images (trailing slash required)
+\graphicspath{{_extensions/moobyf/resources/assets/}{./}{images/}} % Specifies where to look for included images (trailing slash required)
 \setlength{\parindent}{0pt} % Paragraph indentation
 \setlength{\parskip}{10pt} % Vertical space between paragraphs
 
@@ -51,17 +53,17 @@
 
 \usepackage{xcolor} % Required for defining and using custom colors
 % % Gestion des couleurs
-\definecolor{farquhar-body}{RGB}{19,21,22} % $farquhar-body: rgb(19, 21, 22);
-\definecolor{farquhar-primary}{RGB}{3,41,95} %$farquhar-primary: rgb(3, 41, 95);
-\definecolor{farquhar-secondary}{RGB}{36,114,181} % $farquhar-secondary: rgb(36, 114, 181);
-% \definecolor{farquharfont}{RGB}{54,54,54}
-\definecolor{farquhar-important}{RGB}{226,6,19} %$farquhar-important: rgb(226, 6, 19);
-\definecolor{farquhar-bg}{RGB}{0,71,107}
 
-\usepackage{hyperref}
+\definecolor{moobyf-primary}{RGB}{29,53,87} %$moobyf-primary: rgb(3, 41, 95);
+\definecolor{moobyf-secondary}{RGB}{69, 123, 157} % $moobyf-secondary: rgb(36, 114, 181);
+\definecolor{moobyf-ternary}{RGB}{168, 218, 220} %$moobyf-ternary: rgb(32,54,97);
+\definecolor{moobyf-quartenary}{RGB}{241, 250, 238} %$moobyf-ternary: rgb(32,54,97);
+\definecolor{moobyf-important}{RGB}{230, 57, 70} %$moobyf-important: rgb(226, 6, 19);
+\definecolor{moobyf-bg}{RGB}{0,71,107}
+
 \usepackage{mwe}
 \hypersetup{
-urlcolor=farquhar-primary
+urlcolor=moobyf-primary
 ,linkcolor=.
 ,colorlinks=true}
 
@@ -76,7 +78,8 @@ urlcolor=farquhar-primary
 
 \usepackage{mathpazo} % Use Palatino for math
 
-\usepackage[sfdefault]{roboto} 
+% \usepackage[sfdefault]{roboto} 
+\usepackage{raleway}
 
 \newcommand{\textel}[1]{{\fontseries{el}\selectfont #1}} % Define a simple command for using the ExtraLight weight
 \newcommand{\textl}[1]{{\fontseries{l}\selectfont #1}} % Define a simple command for using the Light weight
@@ -106,71 +109,84 @@ urlcolor=farquhar-primary
 %\ohead{\ifstr{\leftmark}{\rightheadercontent}{}{\rightheadercontent}}
 % \cfoot*{\pagemark}
 \cfoot{\thepage\ of \ztotpages}
-\ifoot{\includegraphics[height=1.5cm]{ird-logo.png}}
-\ofoot{\includegraphics[height=1.5cm]{ob7-logo.png}}
+% \ifoot{\includegraphics[height=1.5cm]{ird-logo.png}}
+\ofoot{\includegraphics[height=1.5cm]{logo.png}}
 
 
 % %----------------------------------------------------------------------------------------
 % %	SECTIONS
 % %----------------------------------------------------------------------------------------
 
-% \usepackage{titlesec} % Required for modifying sections
+\usepackage{titlesec} % Required for modifying sections
 
-% % \iftoggle{unnumberedsections}{ % Conditional logic for the unnumbered sections class options
-% % 	\setcounter{secnumdepth}{0} % Don't number sections at any level
-% % }{
-% % 	\setcounter{secnumdepth}{3} % Number sections down to subsubsections
-% % }
+% \iftoggle{unnumberedsections}{ % Conditional logic for the unnumbered sections class options
+% 	\setcounter{secnumdepth}{0} % Don't number sections at any level
+% }{
+	\setcounter{secnumdepth}{3} % Number sections down to subsubsections
+% }
 
-% \titleformat
-% 	{\section} % Section type being modified
-% 	[block] % Section layout type, can be: hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame
-% 	{\raggedright\LARGE\bfseries} % Text formatting of the whole section, i.e. label and title
-% 	{\thesection} % Section label (e.g. number) and its formatting
-% 	{5pt} % Horizontal space between the section label and title
-% 	{} % Code before the section title
-% 	[] % Code after the section title
 
-% \titlespacing*{\section}{0pt}{\baselineskip}{4pt} % Spacing around section titles, the order is: left, before and after
+\titleformat
+	{\chapter} % Section type being modified
+	[hang] % Section layout type, can be: hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame
+	{\raggedright\LARGE\bfseries\color{moobyf-primary}} % Text formatting of the whole section, i.e. label and title
+	{\thechapter} % Section label (e.g. number) and its formatting
+	{0pt} % Horizontal space between the section label and title
+	{} % Code before the section title
+	[] % Code after the section title
 
-% %------------------------------------------------
+\titlespacing*{\section}{0pt}{\baselineskip}{4pt} % Spacing around section titles, the order is: left, before and after
 
-% \titleformat
-% 	{\subsection} % Section type being modified
-% 	[block] % Section layout type, can be: hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame
-% 	{\raggedright\large\bfseries} % Text formatting of the whole section, i.e. label and title
-% 	{\thesubsection} % Section label (e.g. number) and its formatting
-% 	{5pt} % Horizontal space between the section label and title
-% 	{} % Code before the section title
-% 	[] % Code after the section title
 
-% \titlespacing*{\subsection}{0pt}{0.75\baselineskip}{4pt} % Spacing around section titles, the order is: left, before and after
+\titleformat
+	{\section} % Section type being modified
+	[block] % Section layout type, can be: hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame
+	{\raggedright\large\bfseries\color{moobyf-secondary}} % Text formatting of the whole section, i.e. label and title
+	{\thesection} % Section label (e.g. number) and its formatting
+	{5pt} % Horizontal space between the section label and title
+	{} % Code before the section title
+	[] % Code after the section title
 
-% %------------------------------------------------
+\titlespacing*{\section}{0pt}{\baselineskip}{4pt} % Spacing around section titles, the order is: left, before and after
 
-% \titleformat
-% 	{\subsubsection} % Section type being modified
-% 	[block] % Section layout type, can be: hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame
-% 	{\raggedright\bfseries\normalsize} % Text formatting of the whole section, i.e. label and title
-% 	{\thesubsubsection} % Section label (e.g. number) and its formatting
-% 	{5pt} % Horizontal space between the section label and title
-% 	{} % Code before the section title
-% 	[] % Code after the section title
+%------------------------------------------------
 
-% \titlespacing*{\subsubsection}{0pt}{0.5\baselineskip}{0pt} % Spacing around section titles, the order is: left, before and after
+\titleformat
+	{\subsection} % Section type being modified
+	[block] % Section layout type, can be: hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame
+	{\raggedright\large\bfseries\color{moobyf-ternary}} % Text formatting of the whole section, i.e. label and title
+	{\thesubsection} % Section label (e.g. number) and its formatting
+	{5pt} % Horizontal space between the section label and title
+	{} % Code before the section title
+	[] % Code after the section title
 
-% %------------------------------------------------
+\titlespacing*{\subsection}{0pt}{0.75\baselineskip}{4pt} % Spacing around section titles, the order is: left, before and after
 
-% \titleformat
-% 	{\paragraph} % Section type being modified
-% 	[runin] % Section layout type, can be: hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame
-% 	{\bfseries} % Text formatting of the whole section, i.e. label and title
-% 	{} % Section label (e.g. number) and its formatting
-% 	{0pt} % Horizontal space between the section label and title
-% 	{} % Code before the section title
-% 	[~~~~] % Code after the section title
+%------------------------------------------------
 
-% \titlespacing*{\paragraph}{0pt}{0pt}{0pt} % Spacing around section titles, the order is: left, before and after
+\titleformat
+	{\subsubsection} % Section type being modified
+	[block] % Section layout type, can be: hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame
+	{\raggedright\itshape\normalsize\color{moobyf-ternary}} % Text formatting of the whole section, i.e. label and title
+	{\thesubsubsection} % Section label (e.g. number) and its formatting
+	{5pt} % Horizontal space between the section label and title
+	{} % Code before the section title
+	[] % Code after the section title
+
+\titlespacing*{\subsubsection}{0pt}{0.5\baselineskip}{0pt} % Spacing around section titles, the order is: left, before and after
+
+%------------------------------------------------
+
+\titleformat
+	{\paragraph} % Section type being modified
+	[runin] % Section layout type, can be: hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame
+	{\bfseries} % Text formatting of the whole section, i.e. label and title
+	{} % Section label (e.g. number) and its formatting
+	{0pt} % Horizontal space between the section label and title
+	{} % Code before the section title
+	[~~~~] % Code after the section title
+
+\titlespacing*{\paragraph}{0pt}{0pt}{0pt} % Spacing around section titles, the order is: left, before and after
 
 % %----------------------------------------------------------------------------------------
 % %	TABLE OF CONTENTS

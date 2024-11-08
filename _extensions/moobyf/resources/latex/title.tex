@@ -56,7 +56,7 @@ $endfor$
 
 \reportauthors{
 $for(by-author)$
-{$it.name.literal$$if(it.orcid)${\footnotesize~\orcidlink{$it.orcid$}}$endif$$if(it.email)$\href{mailto:$it.email$}{~\footnotesize\textcolor{farquhar-secondary}{\faIcon{envelope}}}$endif$}\\%
+{$it.name.literal$$if(it.orcid)${\footnotesize~\orcidlink{$it.orcid$}}$endif$$if(it.email)$\href{mailto:$it.email$}{~\footnotesize\textcolor{moobyf-secondary}{\faIcon{envelope}}}$endif$}\\%
 $for(it.affiliations)${\footnotesize $it.name$}$endfor$~\\[1ex]%
 $endfor$
 }
