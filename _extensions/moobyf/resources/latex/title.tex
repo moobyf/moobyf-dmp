@@ -47,17 +47,17 @@ $endif$
 
 \author{
 $for(by-author)$
-{\large $it.name.literal$$if(it.orcid)$~\orcidlink{$it.orcid$}$endif$}%
+{ $it.name.literal$$if(it.orcid)$~\orcidlink{$it.orcid$}$endif$}%
 $if(it.attributes.corresponding)$\thanks{Corresponding author.}$endif$ \\%
-$for(it.affiliations)$$it.name$ \\$endfor$%
+$for(it.affiliations)${\footnotesize $it.name$} \\$endfor$%
 {\footnotesize \url{$it.email$}} \and
 $endfor$
 }
 
 \reportauthors{
 $for(by-author)$
-{\Large $it.name.literal$$if(it.orcid)${\footnotesize~\orcidlink{$it.orcid$}}$endif$$if(it.email)$\href{mailto:$it.email$}{~\footnotesize\textcolor{farquhar-secondary}{\faIcon{envelope}}}$endif$}\\%
-$for(it.affiliations)${\normalsize $it.name$}\\$endfor$\\[.8ex]%
+{$it.name.literal$$if(it.orcid)${\footnotesize~\orcidlink{$it.orcid$}}$endif$$if(it.email)$\href{mailto:$it.email$}{~\footnotesize\textcolor{farquhar-secondary}{\faIcon{envelope}}}$endif$}\\%
+$for(it.affiliations)${\footnotesize $it.name$}$endfor$~\\[1ex]%
 $endfor$
 }
 
