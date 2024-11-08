@@ -27,7 +27,7 @@ author:
     # email: julien.lebranchu@ird.fr
     # orcid: 0000-0000-0000-0000
     affiliations: University of Liege, Belgium
-  - name: Ma Souza 
+  - name: Ma Suza 
     # email: ma.suza@leibniz-zmt.de
     orcid: 0009-0007-5166-8106
     affiliations: ZMT, Germany
