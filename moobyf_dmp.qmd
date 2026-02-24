@@ -1,6 +1,6 @@
 ---
 title: Data Management Plan
-subtitle: Version 2.0  
+subtitle: Version 2.1  
 lang: en
 author:
   - name: Julien Lebranchu
@@ -12,7 +12,7 @@ author:
     attributes:
       corresponding: true
   - name: Nawfel Tabie-Geraux
-    orcid: 
+    orcid: 0009-0000-3041-1060
     affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Bali, Indonesia
   - name: Marc Soria 
     # email: marc.soria@ird.fr
@@ -57,7 +57,7 @@ pdf-engine-opts:
 latex-auto-install: false
 latex-tinytex: false
 format: 
-  moobyf-html: default
+  moobyf-pdf: default
 ---
 
 # Framework & Scope
@@ -434,7 +434,7 @@ access is made public upon publication.
 
 #### How to cite:
 
-Lebranchu J., Tabie-Geraux N., Soria M., Ferse S., Parmentier E., Banse M., Suza M., Breckwoldt A., Andrello M., & Capello M. (2026). MOOBYF Data Management Plan (Version 2.1). Zenodo. [10.5281/zenodo.14048788](https://doi.org/10.5281/zenodo.14048788)
+Lebranchu J., Tabie-Geraux N., Soria M., Ferse S., Parmentier E., Banse M., Suza M., Breckwoldt A., Andrello M., & Capello M. (2026). MOOBYF Data Management Plan (Version 2.1). Zenodo. [10.5281/zenodo.18741130](https://doi.org/10.5281/zenodo.18741130)
 
 #### Photo credits:
 
