@@ -18,11 +18,7 @@ author:
   - name: Claudia Ximena Restrepo-Ortiz 
     # email: claudia.restrepo-ortiz@ird.fr
     affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Sète France
-    orcid: 0000-0002-8314-24204
-  - name: Hety Hartaty
-    # email: hety.hartaty@ird.fr
-    affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Bali, Indonesia
-    orcid: 0000-0001-5550-1855  
+    orcid: 0000-0002-8314-24204 
   - name: Francesco Martino
     # orcid: 0000-0000-0000-0000
     affiliations: ZMT, Germany  
@@ -134,7 +130,7 @@ Work package
 |               |                  |                  |                     |
 |               |                  |                  | Led by J. Lebranchu |
 +---------------+------------------+------------------+---------------------+
-| 2.1           | 02 march 2026    |                  | DMB.                |
+| 2.1           | 02 march 2026    |                  | DMB                 |
 +---------------+------------------+------------------+---------------------+
 
 ### DMB - Data Management Board {#sec-dmb-listing}
@@ -265,7 +261,7 @@ An annotated dataset of video images has been constructed using an annotation so
 
 #### DNA data
 
-During the project, the content stomach and eDNA samples is collected and analysed through metabarcoding methods. The resulting dataset will be a list of species.
+During the project, the anal and eDNA samples are collected and analysed through metabarcoding methods. The resulting dataset will be a list of species.
 
 ### Secondary data
 
