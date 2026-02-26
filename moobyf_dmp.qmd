@@ -364,9 +364,16 @@ MT_CC_TS_FAD
 
 ### Primary data
 
-A proposition is to adopt a name of the files based on the USID defined above, for example:
+Primary data files will be named based on the **Unique Site Identifier (USID)** defined above, combined with acquisition information. The general file naming structure will be : 
 
-VD_IDN_PA_FAD2_2025_04_01_S1 where S1 is the sample number (it can be for example a depth where we put a hydrophone or a camera number) Then, we would have a metadata table (one per methodology, for example, one table for BA=bioacoustics), with the following info (one column per item):
+`MT_CC_TS_FAD_YYYY_MM_DD_SX`
+
+where SX is the sample number (it can be for example a depth where we put a hydrophone or a camera number).
+
+**Example (video data):**  
+`VD_IDN_PA_FAD2_2025_04_01_S1`
+
+For each methodology, a dedicated metadata table will be maintained. Each table will contain one record per sample and include, at minimum, the following fields:
 
 -   Folder _name
 -   File name
@@ -378,9 +385,13 @@ VD_IDN_PA_FAD2_2025_04_01_S1 where S1 is the sample number (it can be for exampl
 
 ### Secondary data
 
-Secondary data products will be systematically generated from primary datasets while preserving an explicit and unambiguous link to their source. File naming will strictly follow the USID-based convention of the originating primary data, with the addition of a standardized suffix identifying the derived data type (e.g. `VD_IDN_PA_FAD2_2025_04_01_S1_FRM0001` for the first image frame extracted from a video sample).
+Secondary data products will be systematically generated from primary datasets while preserving an explicit and unambiguous link to their source. File naming will strictly follow the USID-based convention of the originating primary data, with the addition of a standardized suffix identifying the derived data type.
 
-The table below defines the correspondence between primary data, derived data products, and the associated codes used in file naming. This controlled vocabulary ensures consistency across methodologies and supports automated processing, interoperability, and long-term reuse.
+**Example (video-derived data):**  
+`VD_IDN_PA_FAD2_2025_04_01_S1_FRM0001`  
+(first image frame extracted from a video sample)
+
+The table below defines the correspondence between primary data, derived data products, and the associated codes used in file naming. 
 
 | Primary data          | Derived data description                          | Code     |
 |-----------------------|---------------------------------------------------|----------|
