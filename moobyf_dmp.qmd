@@ -118,11 +118,11 @@ Work package
 +---------------+------------------+----------------------+---------------+
 | Country       | Institute        | DMB member           | Active start  |
 +===============+==================+======================+===============+
-| France        | IRD              | Manuel Capello       | April 2024    |
+| France        | IRD              | Manuela Capello       | April 2024    |
 +---------------+------------------+----------------------+---------------+
 | France        | IRD              | Julien Lebranchu\*   | April 2024    |
 +---------------+------------------+----------------------+---------------+
-| Indenosia     | BRIN             | Wudianto Wudianto    | April 2024    |
+| Indonesia     | BRIN             | Wudianto Wudianto    | April 2024    |
 +---------------+------------------+----------------------+---------------+
 | Maldives      | MMRI             | Ahmed Riyaz Jauharee | April 2024    |
 +---------------+------------------+----------------------+---------------+
@@ -190,7 +190,7 @@ More information are available online :
 
 -   MOOBYF Website : <https://moobyf.com> 
 -   Biodiversa+ : <https://www.biodiversa.eu/2024/04/15/moobyf/>
--   MOOBYF Communuties on Zenodo : <https://zenodo.org/communities/moobyf-biodiversa/>
+-   MOOBYF Communities on Zenodo : <https://zenodo.org/communities/moobyf-biodiversa/>
 
 ## Data collection
 
@@ -217,10 +217,10 @@ Echosounder data are collected through two types of buoys :
 1. Marine Instruments M3i+ buoys.
   - A dedicated protocol for buoy deployment and data download is in preparation. The downloading needs to use the MSB Software (Marine Instruments), Version 5.0.
   
-  - The data are stored in CSV file as numeric. They will read and process through a dedicated R script to dertmine the presence/absence of tuna.
+  - The data are stored in CSV file as numeric. They will read and process through a dedicated R script to determine the presence/absence of tuna.
 
 2. Simrad WBAT echosounder.
-  - A dedicated protocol for buoy deployment and data download is in preparation. The downloading needs to use the Matecho and Movies3D Softwares (under Matlab environment), version Matecho20240821V7 and Movies3D2.2.16
+  - A dedicated protocol for buoy deployment and data download is in preparation. The downloading needs to use the Matecho and Movies3D software (under Matlab environment), version Matecho20240821V7 and Movies3D2.2.16
   
   - The data are stored in EK80 CW or EK80 FM files format. This raw data coming from WBAT Echosounder acquisition must be converted in HAC format (DYYYYMMDD-THHMMSS-X.hac), the ICES HAC Standard Data Exchange Format and then into Matlab HDF5 format with Matecho Software. 
 
@@ -262,7 +262,7 @@ MOOBYF is prepared for the secure storage of 1 Tb of data, which can be extended
 +-----------------------------------+--------------------------+
 | Description                       | Expected data sizes (Gb) |
 +===================================+==========================+
-| DNA sequence                      | To be estimate           |
+| DNA sequence                      | To be estimated          |
 +-----------------------------------+--------------------------+
 | Video files from embarked cameras | 400                      |
 +-----------------------------------+--------------------------+
@@ -319,7 +319,7 @@ Each site and sample will be assigned a **Unique Site Identifier (USID)**. The U
 The identifier format is: 
 MT_CC_TS_FAD
 
-**Example:** `BA_IDN_GO_FAD2` → Bioacoustics at the second FAD in Gondol, Indonesia. 
+**Example:** `BA_IDN_GO_FAD2`, corresponding to a bioacoustic deployment conducted at the second FAD located in Gondol, Indonesia.
 
 | Methodology     | Code |
 |-----------------|------|
@@ -358,8 +358,6 @@ MT_CC_TS_FAD
 
 : FAD Identifiers
 
-**Notes:** These identifiers will be used consistently across datasets, metadata, and file naming to ensure traceability.
-
 ## Sampling naming conventions
 
 ### Primary data
@@ -368,24 +366,24 @@ Primary data files will be named based on the **Unique Site Identifier (USID)** 
 
 `MT_CC_TS_FAD_YYYY_MM_DD_SX`
 
-where SX is the sample number (it can be for example a depth where we put a hydrophone or a camera number).
+where SX is the sample number (e.g. a recording depth for a hydrophone deployment or a camera identifier).
 
 **Example (video data):**  
 `VD_IDN_PA_FAD2_2025_04_01_S1`
 
 For each methodology, a dedicated metadata table will be maintained. Each table will contain one record per sample and include, at minimum, the following fields:
 
--   Folder _name
+-   Folder name
 -   File name
 -   Latitude
 -   Longitude
--   Date start
--   Date end
+-   Start date
+-   End date
 -   Distance from buoy to FAD
 
 ### Secondary data
 
-Secondary data products will be systematically generated from primary datasets while preserving an explicit and unambiguous link to their source. File naming will strictly follow the USID-based convention of the originating primary data, with the addition of a standardized suffix identifying the derived data type.
+Secondary data products will be generated from primary datasets while preserving an explicit and unambiguous link to their source. File naming will strictly follow the USID-based convention of the originating primary data, with the addition of a standardized suffix identifying the derived data type.
 
 **Example (video-derived data):**  
 `VD_IDN_PA_FAD2_2025_04_01_S1_FRM0001`  
