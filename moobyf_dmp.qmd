@@ -1,51 +1,99 @@
 ---
-title: Data Management Plan
-subtitle: Version 2.0  
+title: MOOBYF project Data Management Plan
+subtitle: Version 2.1  
 lang: en
 author:
   - name: Julien Lebranchu
     email: julien.lebranchu@ird.fr
     orcid: 0000-0002-7759-0534
     affiliations: 
-      - MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Victoria, Seychelles
+      - MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Sète, France
       # - IRD@SFA, Victoria, Seychelles.
     attributes:
       corresponding: true
-  - name: Marc Soria 
-    # email: marc.soria@ird.fr
-    affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Sète France
-    orcid: 0000-0001-7409-5872
+  - name: Nawfel Tabie-Geraux
+    email: nawfel.tabie-geraux@ird.fr
+    orcid: 0009-0000-3041-1060
+    affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Sète, France
+  - name: Claudia Ximena Restrepo-Ortiz 
+    # email: claudia.restrepo-ortiz@ird.fr
+    affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Sète, France
+    orcid: 0000-0002-8314-24204
+  - name: Hety Hartaty
+    # email: 
+    affiliations: BRIN, Indonesia
+    orcid: 0000-0001-5550-1855
+  - name: Ahmed Riyaz Jauharee
+    # email: 
+    affiliations: National University of Maldives, Maldives
+    orcid: 0000-0002-8006-5554
+  - name: Leonardo Congiu
+    # email: 
+    affiliations: University of Padova, Italy
+    orcid: 0000-0002-9293-9837
+  - name: Bastien Mérigot  
+    # email: 
+    affiliations: University of Montpellier, France
+    orcid: 0000-0001-5264-4324    
+  - name: Wudianto Wudianto
+    # email: 
+    affiliations: BRIN, Indonesia
+    orcid: 0009-0008-6530-2903  
+  - name: Francesco Martino
+    orcid: 0009-0008-6780-152X
+    affiliations: University of Padova, Italy
   - name: Sebastian Ferse
-    # email: sebastian.ferse@leibniz-zmt.de
-    # orcid: 0000-0000-0000-0000
-    affiliations: ZMT, Germany
+    # email: 
+    orcid: 0000-0003-0930-5356
+    affiliations: Leibniz Centre for Tropical Marine Research (ZMT), Germany
   - name: Eric Parmentier
-    # email: e.parmentier@ulg.ac.be
-    # orcid: 0000-0000-0000-0000
+    # email: 
+    orcid: 0000-0002-0391-7530
     affiliations: University of Liege, Belgium
   - name: Marine Banse 
-    # email: julien.lebranchu@ird.fr
-    # orcid: 0000-0000-0000-0000
+    # email: 
+    orcid: 0000-0001-9689-1079
     affiliations: University of Liege, Belgium
   - name: Ma Suza 
     # email: ma.suza@leibniz-zmt.de
     orcid: 0009-0007-5166-8106
-    affiliations: ZMT, Germany
+    affiliations: Leibniz Centre for Tropical Marine Research (ZMT), Germany
   - name: Annette Breckwoldt
     # email: annette.breckwoldt@leibniz-zmt.de
-    # orcid: 0000-0000-0000-0000
-    affiliations: ZMT, Germany
+    orcid: 0000-0002-5976-4537
+    affiliations: Leibniz Centre for Tropical Marine Research (ZMT), Germany
+  - name: Marc Soria 
+    # email: marc.soria@ird.fr
+    affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Sète, France
+    orcid: 0000-0001-7409-5872  
   - name: Marco Andrello
     # email: marco.andrello@gmail.com
     orcid: 0000-0001-7590-2736
     affiliations: 
     - CNR-IAS, Rome, Italy
-    - National Biodiversity Future Center
   - name: Manuela Capello
     # email: julien.lebranchu@ird.fr
     orcid: 0000-0002-9206-011X
-    affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Bali, Indonesia
-# date: August 24, 2022
+    affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Sète, France
+
+affiliations:
+  - id: 1
+    name: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Sète, France
+  - id: 2
+    name: BRIN, Indonesia
+  - id: 3
+    name: National University of Maldives, Maldives  
+  - id: 4
+    name: University of Padova, Italy
+  - id: 5
+    name: Leibniz Centre for Tropical Marine Research (ZMT), Germany
+  - id: 6
+    name: University of Liege, Belgium
+  - id: 7
+    name: CNR-IAS, Rome, Italy
+
+
+date: March 2, 2026
 bibliography: refs.bib
 pdf-engine: lualatex
 pdf-engine-opts:
@@ -61,7 +109,7 @@ format:
 
 ## Funding Acknowledgement
 
-This document is based upon work from MOOBYF project, funded by Biodiversa+, the European Biodiversity Partnership under the 2022-2023 BiodivMon joint call for research proposals, co-funded by the European Commission (GA N°101052342[^1]) and with the funding organizations: ANR, France; BMBF, Germany; Ministry of University and Research, Italy; and FRS-FNRS, Belgium.
+This research was funded by Biodiversa+, the European Biodiversity Partnership, in the context of the MOOBYF project under the 2022-2023 BiodivMon joint call. It was co- funded by the European Commission (GA No. 101052342) and the following funding organisations: ANR - Agence Nationale de la Recherche and Office Français de la Biodiversité – France, FONDS DE LA RECHERCHE SCIENTIFIQUE – FNRS - Belgium, Ministry of Universities and Research, Italy, and Deutsche Forschungsgemeinschaft e.V. ; BMBF-VDI/VDE INNOVATION + TECHNIK GMBH, Germany.
 
 [^1]: DOI: [10.3030/101052342](https://doi.org/10.3030/101052342)
 
@@ -89,7 +137,7 @@ Work package
 
 [Delivery date]{.smallcaps}
 
-:   07 November 2024
+:   02 March 2026
 
 [Availability]{.smallcaps}
 
@@ -106,32 +154,23 @@ Work package
 |               |                  |                  |                     |
 |               |                  |                  | Led by J. Lebranchu |
 +---------------+------------------+------------------+---------------------+
+| 2.1           | 02 march 2026    |                  | See title page      |
++---------------+------------------+------------------+---------------------+
 
 ### DMB - Data Management Board {#sec-dmb-listing}
 
-+---------------+------------------+----------------------+---------------+
-| Country       | Institute        | DMB member           | Active start  |
-+===============+==================+======================+===============+
-| France        | IRD              | Manuel Capello       | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| France        | IRD              | Julien Lebranchu\*   | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| Indenosia     | BRIN             | Wudianto Wudianto    | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| Maldives      | MMRI             | Ahmed Riyaz Jauharee | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| France        | OFB              | Cyrielle Jac         | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| Germany       | ZMT              | Ma Souza             | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| Italy         | CNR              | Marco Andrello       | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| Belgium       | Univ Liège       | Marine Banse         | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| Italy         | Univ Padova      | Leonardo Congiu      | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| France        | Univ Montpellier | Bastien Mérigot      | April 2024    |
-+---------------+------------------+----------------------+---------------+
+| Country    | Institute                       | DMB Member              | Active Since |
+|------------|---------------------------------|-------------------------|--------------|
+| France     | IRD                             | Manuela Capello         | April 2024   |
+| France     | IRD                             | Julien Lebranchu*       | April 2024   |
+| France     | IRD                             | Nawfel Tabie-Geraux     | January 2026 |
+| Indonesia  | BRIN                            | Wudianto Wudianto       | April 2024   |
+| Maldives   | National University of Maldives | Ahmed Riyaz Jauharee    | April 2024   |
+| Germany    | ZMT                             | Ma Suza                 | April 2024   |
+| Italy      | CNR                             | Marco Andrello          | April 2024   |
+| Belgium    | University of Liège             | Marine Banse            | April 2024   |
+| Italy      | University of Padova            | Leonardo Congiu         | April 2024   |
+| France     | University of Montpellier       | Bastien Mérigot         | April 2024   |
 
 \*Committee Chair
 
@@ -139,8 +178,8 @@ Work package
 
 ## Scope
 
--   Supports common understanding and expectations among Partners and associated teams for the management of data associated.
--   Serves as a tool to ensure the project meets research community, partner institution, national and EU standards for data access (inclusive of FAIR principles and deposition of data into appropriate public repositories).
+-   Supports common understanding among Partners and associated teams for the management of data associated.
+-   Serves as a tool to ensure the project meets research needs, partner institutions, national and EU standards for data access (inclusive of FAIR principles and the deposit of data into appropriate public repositories).
 -   Provides a mutually agreed framework defining the use, sharing, and storage of data.
 
 ## Acronyms, abbreviations, & definitions
@@ -169,9 +208,9 @@ DMB
 
 ## Membership, responsibilities, and scope
 
-DMB will develop, implement, and update an operational MOOBYF Data Management Plan, support adherence to the DMP, and ensure the MOOBYF DMP meets research community, partner institution, national and EU standards.
+The DMB will develop, implement, and update an operational MOOBYF Data Management Plan, support implementation of the DMP, and ensure the MOOBYF DMP meets research needs, partner institution, national and EU standards.
 
--   The DMB is composed of (minimum) one representative from each Partner institution. See @sec-dmb-listing for membership record.
+-   The DMB is composed of (minimum) one representative from each Partner institution. See @sec-dmb-listing for the list of DMB members.
 -   DMB meets 2 times per year (virtually), with interim virtual meetings and digital communications as needed.
 
 # Data collection and Digital outputs
@@ -182,8 +221,9 @@ Data collection and research are in accordance with the objective of the project
 
 More information are available online :
 
+-   MOOBYF Website : <https://moobyf.com> 
 -   Biodiversa+ : <https://www.biodiversa.eu/2024/04/15/moobyf/>
--   MOOBYF Communuties on Zenodo : <https://zenodo.org/communities/moobyf-biodiversa/>
+-   MOOBYF Communities on Zenodo : <https://zenodo.org/communities/moobyf-biodiversa/>
 
 ## Data collection
 
@@ -193,56 +233,56 @@ Primary data are the raw data collected during the project before any processing
 
 #### Bioacoustic data
 
-Data will be collected using SNAP recorders, deployed with a pre-programmed recorder to capture 10-minute sequences every hour over the course of a week.
-The data type is a WAV format.
+Data are collected using SNAP recorders, which aredeployed with a pre-programmed recorder to capture 10-minute sequences every hour over the course of a week.
+Data are stored in WAV format.
 
 #### Temperature-Depth Recorder data
 
-TDR Data collected using STARODDI archival tags. A dedicated protocol for tag deployment and data retrieval is in preparation.
+TDR Data are collected using STARODDI archival tags. A dedicated protocol for tag deployment and data retrieval has been used.
 Data is downloaded using the Seastar (Staroddi) Software, Version 9.45.
 A dedicated R script is used to read and plot the TD data.
-The data are stored in DAT file as numeric.
+Data are stored in DAT file as numeric.
 
 #### Echosounder data
 
 Echosounder data are collected through two types of buoys : 
 
 1. Marine Instruments M3i+ buoys.
-  - A dedicated protocol for buoy deployment and data download is in preparation. The downloading needs to use the MSB Software (Marine Instruments), Version 5.0.
+  - A dedicated protocol for buoy deployment and data download has been used. Data download are performed using the MSB Software (Marine Instruments), Version 5.0.
   
-  - The data are stored in CSV file as numeric. They will read and process through a dedicated R script to dertmine the presence/absence of tuna.
+  - Data are stored in CSV files as numeric values. They are read and process using a dedicated R script to determine the presence orabsence of tuna.
 
 2. Simrad WBAT echosounder.
-  - A dedicated protocol for buoy deployment and data download is in preparation. The downloading needs to use the Matecho and Movies3D Softwares (under Matlab environment), version Matecho20240821V7 and Movies3D2.2.16
+  - A dedicated protocol for buoy deployment and data download has been used. Data download are performed using the Matecho and Movies3D software (under Matlab environment), version Matecho20240821V7 and Movies3D2.2.16
   
-  - The data are stored in EK80 CW or EK80 FM files format. This raw data coming from WBAT Echosounder acquisition must be converted in HAC format (DYYYYMMDD-THHMMSS-X.hac), the ICES HAC Standard Data Exchange Format and then into Matlab HDF5 format with Matecho Software. 
+  - Data are stored in EK80 CW or EK80 FM file formats. Raw data acquired from the WBAT echosounder must be converted in HAC format (DYYYYMMDD-THHMMSS-X.hac), the ICES HAC Standard Data Exchange Format and then into Matlab HDF5 format with Matecho Software. 
 
 #### Surveys data
 
-The data will be collected through qualitative methods, including focus group discussions, key informant interviews, and observations. The data will on different types like textual documents (such as interviews, observations), images, audio and video recordings. [ATLAS.ti](https://atlasti.com/fr) software will be used for coding and analysing the collected data.
+Data are collected through qualitative methods, including focus group discussions, key informant interviews, and observations. The resulting data include different types of materials such as textual documents (e.g. interview transcripts and observation notes), images, audio and video recordings. [ATLAS.ti](https://atlasti.com/fr) software will be used for coding and analysing the collected data.
 
 #### Video data
 
-The data are collected with 4 IP cameras situated approximately 1.3 m below the surface. 
-The buoy will be programmed to film at different durations/frequencies to assess the best sampling protocol to detect species near the AFAD. 
+Data are collected with 4 IP cameras situated approximately 1.3 m below the surface. 
+The camera is programmed to film at different durations/frequencies to assess the best sampling protocol to detect species near the AFAD. 
 
 #### Deep Learning Model data
 
-An annotated dataset of video images will be constructed using an annotation software to label the species of interest in each frame. From this dataset, a deep learning model will be developed and trained using state-of-the-art architectures such as convolutional neural networks (CNNs). 
+An annotated dataset of video images has been constructed using an annotation software to label the species of interest in each frame. From this dataset, a deep learning model has been developed and trained using state-of-the-art architectures such as convolutional neural networks (CNNs). 
 
 #### DNA data
 
-During the project, the content stomach and eDNA samples will be collected and analysed through metabarcoding methods. The dataset resulting will be a list of species.
+During the project, the anal and eDNA samples are collected and analysed through metabarcoding methods. The resulting dataset will be a list of species.
 
 ### Secondary data
 
-The responsibility for managing secondary and working datasets, as well as storage, lies with the partners, with guidance provided by the DMB. These datasets are usually generated through analysis pipelines and can be reproduced by applying specific analyses, pipelines, or scripts. The final outputs of these processes are essential for reports, publications, and other deliverables.
+The responsibility for managing secondary and working datasets, as well as storage, belongs to the partners, with guidance provided by the DMB. These datasets are usually generated through analysis pipelines and can be reproduced by applying specific analyses, pipelines, or scripts. The final outputs of these processes are used for reports, publications, and other deliverables.
 
 ### Other data
 
 #### Photos
 
-Photos collected within the project will include the photographer's name in the file naming convention to ensure proper attribution. By submitting photos to the project directories, partners acknowledge that their name *will* be publicly credited if/when the photos are used in presentations, publications, or communications, supporting transparent credit attribution.
+Photos collected within the project will include the photographer's name in the file naming convention to ensure proper attribution. By submitting photos to the project directories, partners acknowledge that their name will be publicly credited if/when the photos are used in presentations, publications, or communications, supporting transparent credit attribution.
 
 For photos featuring people, they can only be submitted if explicit permission is obtained from those depicted. The initials of the individuals must be included in the file name, and their full names should be documented in the file MOOBYF_photos_README. The photographer is responsible for ensuring that everyone featured in a photo understands that their image and, optionally, their name *will* be publicly visible if/when the photo is used for presentations, publications, or communications.
 
@@ -255,13 +295,13 @@ MOOBYF is prepared for the secure storage of 1 Tb of data, which can be extended
 +-----------------------------------+--------------------------+
 | Description                       | Expected data sizes (Gb) |
 +===================================+==========================+
-| DNA sequence                      | To be estimate           |
+| DNA sequence                      | To be estimated          |
 +-----------------------------------+--------------------------+
 | Video files from embarked cameras | 400                      |
 +-----------------------------------+--------------------------+
 | Deep Learning models              | 200                      |
 +-----------------------------------+--------------------------+
-| TDR datasets                      | 10                       |
+| TDR datasets                      | 1                        |
 +-----------------------------------+--------------------------+
 | echosounder datasets              | 200                      |
 +-----------------------------------+--------------------------+
@@ -302,60 +342,100 @@ MOOBYF is prepared for the secure storage of 1 Tb of data, which can be extended
 
 ## Unique Site Identifiers
 
-We need to define an ID for sites in purpose to keep on track our data and the sample. I propose something based on MT + CC + TS.
+Each site and sample will be assigned a **Unique Site Identifier (USID)**. The USID is a combination of codes representing:
 
-| USID | Description    |
-|------|----------------|
-| MT   | Methodology    |
-| CC   | Country Code   |
-| TS   | Targeted Site  |
+- **Methodology (MT)**
+- **Country (CC)**
+- **Targeted Site (TS)**
+- **Fish Aggregating Device (FAD)**
 
-: Components of the Unique Site ID
+The identifier format is: 
+MT_CC_TS_FAD
+
+**Example:** `BA_IDN_GO_FAD2`, corresponding to a bioacoustic deployment conducted at the second FAD located in Gondol, Indonesia.
 
 | Methodology     | Code |
 |-----------------|------|
 | bioacoustics    | BA   |
-| echosounder buoy | MI   |
+| echosounder buoy| MI   |
 | wbat            | WB   |
+| video           | VD   |
+| metabarcoding   | MB   |
 
-: Country Codes for samples
+: Methodology Codes (MT)
 
-| Country   | ISO 3166-1 Alpha-3 |
+| Country   | Code               |
 |-----------|--------------------|
 | Indonesia | IDN                |
-| Mayotte   | MYT                |
+| Seychelles| SYC                |
 | Maldives  | MDV                |
+| Kiribati  | KIR                |
 
-: Country Codes for samples
+: Country Codes (ISO 3166-1 Alpha-3) (CC)
 
 | Targeted site  | Site code |
 |----------------|-----------|
 | Gondol         | GO        |
+| Pancer         | PA        |
+| Mahe           | MA        |
 | Captive fish   | CF        |
-| FAD1 in Pancer | F1P       |
 
-: Site used as case studies
+: Targeted Site Codes (TS)
+
+| FAD Identifier | Description                   |
+|----------------|-------------------------------|
+| FAD1           | First FAD deployed at site    |
+| FAD2           | Second FAD deployed at site   |
+| FAD3           | Third FAD deployed at site    |
+| FAD...         | ... FAD deployed at site      |
+
+: Fish Aggregating Device Identifiers (FAD)
 
 ## Sampling naming conventions
 
-A proposition is to adopt a name of the folders based on the USID defined above, for example:
+### Primary data
 
-BA_IDN_F1P_Q1_S1 where S1 is the sample number (it can be for example a depth where we put a hydrophone or a camera number) Then, we would have a metadata table (one per methodology, for example, one table for BA=bioacoustics), with the following info (one column per item):
+Primary data files will be named based on the **Unique Site Identifier (USID)** defined above, combined with acquisition information. The general file naming structure will be : 
 
--   Folder _name
+`MT_CC_TS_FAD_YYYY_MM_DD_SX`
+
+where YYYY_MM_DD is the date of acquisition and SX is the sample number (e.g. a recording depth for a hydrophone deployment or a camera identifier).
+
+**Example (video data):**  
+`VD_IDN_PA_FAD2_2025_04_01_S1`
+
+For each methodology, a dedicated metadata table will be maintained. Each table will contain one record per sample and include, at minimum, the following fields:
+
+-   Folder name
 -   File name
 -   Latitude
 -   Longitude
--   Date start
--   Date end
--   Distance from buoy to FAD
+-   Start date
+-   End date
+-   Distance to FAD
+
+### Secondary data
+
+Secondary data products will be generated from primary datasets while preserving an explicit and unambiguous link to their source. File naming will strictly follow the USID-based convention of the originating primary data, with the addition of a standardized suffix identifying the derived data type.
+
+**Example (video-derived data):**  
+`VD_IDN_PA_FAD2_2025_04_01_S1_FRM0001`  
+(first image frame extracted from a video sample)
+
+The table below defines the correspondence between primary data, derived data products, and the associated codes used in file naming. 
+
+| Primary data          | Derived data description                          | Code     |
+|-----------------------|---------------------------------------------------|----------|
+| Video (VD)            | Extracted image frames                            | FRM####  |
+
+This structured approach guarantees full traceability between primary and secondary datasets, enables robust cross-referencing with metadata tables.
 
 # Data security, Storage & Costs
 
 ## During the project
 
 -   Non-personal data backup : All MOOBYF data will be stored on a secure data storage (MARBEC_NAS) to prevent data loss and data security.
--   Personal data: Stakeholder personal data should be collected and stored using the backup system of his institute.
+-   Personal data: Stakeholder personal data should be collected and stored using the backup system of their institute.
 -   IRD Drive : MOOBYF has a shared directory on IRD Drive with a proficient backup system. Use of this product is controlled directly by the IT staff at IRD and they managed the access with at a user level.
 
 ## Long-term
@@ -371,8 +451,7 @@ Deposits of data in recognised public data repositories are a priority. Data and
 
 ### Primary data
 
-Directory structure and naming conventions will be established and
-updated by the DMB prioritising FAIR principles. 
+Directory structure and naming conventions will be established and updated by the DMB prioritising FAIR principles. 
 Directory and file names are expected to use the PrID when applicable (see @sec-data-identifier). 
 
 ### Secondary data
@@ -391,7 +470,7 @@ Datasets will be formatted and made accessible at the time of publication or bef
 
 All data and metadata will be produced by individual Partner institutions and shared on a common platform or promptly transferred as digital copies to the IRD for backup. Additionally, copies of raw data may be made available as specified in Section 6.1 during the project period.
 
-The project coordinator and the DMB representative at IRD will have access to these datasets and will provide data to Partners upon request, with one exception:
+The project coordinator and the DMB representatives at IRD will have access to these datasets and will provide data to Partners upon request, with one exception:
 
 If a data request extends beyond the defined responsibilities of a Partner’s project role (as outlined in the MOOBYF application), the DMB will review the request before granting access. Access will be approved if all the following conditions are met:
 
@@ -405,34 +484,35 @@ Data generated by partner institutions should be made accessible to all partners
 
 Data sharing can be conducted through any secure method unless specified otherwise by the DMB or in future updates to the DMP.
 
-<!-- ## Public access to data and digital outputs -->
 
-```{=html}
-<!-- ###  Scientific papers
+## Public access to data and digital outputs
+
+
+###  Scientific papers
 
 We prioritize publishing open access. Papers will be made publicly available from the time of publication. 
 By mutual agreement among authors, the pre-publication version may be made publicly available via a field-appropriate and recognized pre-print archive.
 
 ### Data that is the basis of Scientific papers: 
-
+  
 To support publication, datasets relied on for scientific papers will be deposited in public repositories 
 and made publicly available upon formal publication (does not include pre-review or
 pre-print versions).
 
 The lead author and corresponding author of each manuscript is responsible for
 coordinating with the DMB and other work groups and authors to ensure that the data
-access is made public upon publication. -->
-```
+access is made public upon publication.
+
 
 # Document credits & How to cite
 
 #### How to cite:
 
-Lebranchu, J. and al. (2024). MOOBYF Data Management Plan v2. Zenodo. [10.5281/zenodo.13883981](https://doi.org/10.5281/zenodo.13883981)
+Lebranchu J., and al. (2026). MOOBYF Data Management Plan (Version 2.1). Zenodo. [10.5281/zenodo.18741130](https://doi.org/10.5281/zenodo.18741130)
 
 #### Photo credits:
 
-Cover : Bali, Indonesia, 2024.
+Cover : Manuela Capello, MOOBYF project, Bali, Indonesia, 2024.
 
 <!-- #### Font: -->
 
