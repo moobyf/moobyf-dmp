@@ -7,67 +7,91 @@ author:
     email: julien.lebranchu@ird.fr
     orcid: 0000-0002-7759-0534
     affiliations: 
-      - [1]
+      - MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Sète, France
       # - IRD@SFA, Victoria, Seychelles.
     attributes:
       corresponding: true
   - name: Nawfel Tabie-Geraux
     email: nawfel.tabie-geraux@ird.fr
     orcid: 0009-0000-3041-1060
-    affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Bali, Indonesia
+    affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Sète, France
   - name: Claudia Ximena Restrepo-Ortiz 
     # email: claudia.restrepo-ortiz@ird.fr
-    affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Sète France
-    orcid: 0000-0002-8314-24204 
+    affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Sète, France
+    orcid: 0000-0002-8314-24204
+  - name: Hety Hartaty
+    # email: 
+    affiliations: BRIN, Indonesia
+    orcid: 0000-0001-5550-1855
+  - name: Ahmed Riyaz Jauharee
+    # email: 
+    affiliations: National University of Maldives, Maldives
+    orcid: 0000-0002-8006-5554
+  - name: Leonardo Congiu
+    # email: 
+    affiliations: University of Padova, Italy
+    orcid: 0000-0002-9293-9837
+  - name: Bastien Mérigot  
+    # email: 
+    affiliations: University of Montpellier, France
+    orcid: 0000-0001-5264-4324    
+  - name: Wudianto Wudianto
+    # email: 
+    affiliations: BRIN, Indonesia
+    orcid: 0009-0008-6530-2903  
   - name: Francesco Martino
-    # orcid: 0000-0000-0000-0000
-    affiliations: ZMT, Germany  
+    orcid: 0009-0008-6780-152X
+    affiliations: University of Padova, Italy
   - name: Sebastian Ferse
-    # email: sebastian.ferse@leibniz-zmt.de
-    # orcid: 0000-0000-0000-0000
-    affiliations: ZMT, Germany
+    # email: 
+    orcid: 0000-0003-0930-5356
+    affiliations: Leibniz Centre for Tropical Marine Research (ZMT), Germany
   - name: Eric Parmentier
-    # email: e.parmentier@ulg.ac.be
-    # orcid: 0000-0000-0000-0000
+    # email: 
+    orcid: 0000-0002-0391-7530
     affiliations: University of Liege, Belgium
   - name: Marine Banse 
-    # email: julien.lebranchu@ird.fr
-    # orcid: 0000-0000-0000-0000
+    # email: 
+    orcid: 0000-0001-9689-1079
     affiliations: University of Liege, Belgium
   - name: Ma Suza 
     # email: ma.suza@leibniz-zmt.de
     orcid: 0009-0007-5166-8106
-    affiliations: ZMT, Germany
+    affiliations: Leibniz Centre for Tropical Marine Research (ZMT), Germany
   - name: Annette Breckwoldt
     # email: annette.breckwoldt@leibniz-zmt.de
-    # orcid: 0000-0000-0000-0000
-    affiliations: ZMT, Germany
+    orcid: 0000-0002-5976-4537
+    affiliations: Leibniz Centre for Tropical Marine Research (ZMT), Germany
   - name: Marc Soria 
     # email: marc.soria@ird.fr
-    affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Sète France
+    affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Sète, France
     orcid: 0000-0001-7409-5872  
   - name: Marco Andrello
     # email: marco.andrello@gmail.com
     orcid: 0000-0001-7590-2736
     affiliations: 
     - CNR-IAS, Rome, Italy
-    - National Biodiversity Future Center
   - name: Manuela Capello
     # email: julien.lebranchu@ird.fr
     orcid: 0000-0002-9206-011X
-    affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Bali, Indonesia
+    affiliations: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Sète, France
 
 affiliations:
   - id: 1
     name: MARBEC, Univ Montpellier, CNRS, IFREMER, IRD, Sète, France
   - id: 2
-    name: Leibniz Centre for Tropical Marine Research (ZMT), Germany
+    name: BRIN, Indonesia
   - id: 3
-    name: University of Liège, Belgium
+    name: National University of Maldives, Maldives  
   - id: 4
-    name: CNR-IAS, Rome, Italy
+    name: University of Padova, Italy
   - id: 5
-    name: National Biodiversity Future Center, Italy
+    name: Leibniz Centre for Tropical Marine Research (ZMT), Germany
+  - id: 6
+    name: University of Liege, Belgium
+  - id: 7
+    name: CNR-IAS, Rome, Italy
+
 
 date: March 2, 2026
 bibliography: refs.bib
@@ -130,36 +154,23 @@ Work package
 |               |                  |                  |                     |
 |               |                  |                  | Led by J. Lebranchu |
 +---------------+------------------+------------------+---------------------+
-| 2.1           | 02 march 2026    |                  | DMB                 |
+| 2.1           | 02 march 2026    |                  | See title page      |
 +---------------+------------------+------------------+---------------------+
 
 ### DMB - Data Management Board {#sec-dmb-listing}
 
-+---------------+------------------+----------------------+---------------+
-| Country       | Institute        | DMB member           | Active start  |
-+===============+==================+======================+===============+
-| France        | IRD              | Manuela Capello      | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| France        | IRD              | Julien Lebranchu\*   | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| France        | IRD              | Nawfel Tabie-Geraux  | January 2026  |
-+---------------+------------------+----------------------+---------------+
-| Indonesia     | BRIN             | Wudianto Wudianto    | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| Maldives      | MMRI             | Ahmed Riyaz Jauharee | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| France        | OFB              | Cyrielle Jac         | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| Germany       | ZMT              | Ma Souza             | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| Italy         | CNR              | Marco Andrello       | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| Belgium       | Univ Liège       | Marine Banse         | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| Italy         | Univ Padova      | Leonardo Congiu      | April 2024    |
-+---------------+------------------+----------------------+---------------+
-| France        | Univ Montpellier | Bastien Mérigot      | April 2024    |
-+---------------+------------------+----------------------+---------------+
+| Country    | Institute                       | DMB Member              | Active Since |
+|------------|---------------------------------|-------------------------|--------------|
+| France     | IRD                             | Manuela Capello         | April 2024   |
+| France     | IRD                             | Julien Lebranchu*       | April 2024   |
+| France     | IRD                             | Nawfel Tabie-Geraux     | January 2026 |
+| Indonesia  | BRIN                            | Wudianto Wudianto       | April 2024   |
+| Maldives   | National University of Maldives | Ahmed Riyaz Jauharee    | April 2024   |
+| Germany    | ZMT                             | Ma Suza                 | April 2024   |
+| Italy      | CNR                             | Marco Andrello          | April 2024   |
+| Belgium    | University of Liège             | Marine Banse            | April 2024   |
+| Italy      | University of Padova            | Leonardo Congiu         | April 2024   |
+| France     | University of Montpellier       | Bastien Mérigot         | April 2024   |
 
 \*Committee Chair
 
